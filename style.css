@@ -88,7 +88,7 @@ img {
 
 
 .mhu{
-	font-size: 26px;
+	font-size: 20px;
 }
 
 
@@ -272,7 +272,7 @@ img {
 }
 
 .icons-set li{
-	padding: 0 15px;
+	padding: 0 8px;
 	vertical-align: middle;
 	transition: .4s;
 }
@@ -290,6 +290,8 @@ img {
 	margin: 20px auto;
 	min-height: 130px;
 }
+
+
 
 .skills .mhu,
 .skills .fa-wordpress-simple{
@@ -510,7 +512,7 @@ cite{
 
 
 .social-links a{
-	font-size: 18px;
+	font-size: 22px;
 	display: inline-block;	
 	vertical-align: middle;
 }
