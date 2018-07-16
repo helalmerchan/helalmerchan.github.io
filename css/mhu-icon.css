@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'mhu';
+  src:
+    url('../fonts/mhu.ttf?7858cc') format('truetype'),
+    url('../fonts/mhu.woff?7858cc') format('woff'),
+    url('../fonts/mhu.svg?7858cc#mhu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mhu {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'mhu' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mhu-sass:before {
+  content: "\e900";
+}
+.mhu-woocommerce:before {
+  content: "\e901";
+}
+.mhu-backend:before {
+  content: "\e902";
+}
+.mhu-bootstrap:before {
+  content: "\e903";
+}
+.mhu-design:before {
+  content: "\e904";
+}
+.mhu-email:before {
+  content: "\e905";
+}
+.mhu-frontend:before {
+  content: "\e906";
+}
+.mhu-illustrator:before {
+  content: "\e907";
+}
+.mhu-photoshop:before {
+  content: "\e908";
+}
+.mhu-sublime:before {
+  content: "\e909";
+}
+.mhu-xampp:before {
+  content: "\e90a";
+}
