@@ -52,7 +52,7 @@
 
   //VIDEO BACKGROUND
   $('.site-header').vidbg({
-      'mp4': 'videos/Background.MP4',
+      'mp4': 'videos/videobground.mp4',
       'poster': 'images/header-bg.jpg',
   }, {
     // Options
@@ -60,7 +60,7 @@
     // loop: false,
     overlay: true,
     overlayColor: '#030f17',
-    overlayAlpha: '0.4',
+    overlayAlpha: '0.7',
   });
 
 
