@@ -71,26 +71,45 @@
                   <br><br>
                   <div id="licenseFormGroup">
 
-                    <div class="row" id="license1">
-                      <div class="form-group" id="licenseFormGroup1">
-                          <div class="add-margin col-sm-5 col-md-5">
+                    <div class="" id="license1">
+                      <div class="row" id="licenseFormGroup1">
+                          <div class="col-sm-5 col-md-5">
                             <label for="licenseNum">Select your license type</label> 
-                            <select aria-describedby="licenseHelp" name="licenseType1" id="licenseType1" required="" class="medium  form-control">
+                            <select aria-describedby="licenseHelp" name="licenseType1" id="licenseType1" required="" class="medium  form-control contact-usselect">
                               <option value="" selected="" disabled="">Select your license type</option>
                               <option selected="" value="HB">HB - Hair Braider</option>
                               <option value="HW">HW - Hair Wrapper</option>
                               <option value="BW">BW - Body Wrapper</option>
                             </select>
                           </div>
-                          <div class="add-margin col-sm-5 col-md-5">
-                            <label for="licenseNum">Enter your license number</label> 
+                          <div class=" col-sm-5 col-md-5">
+                            <label for="licenseNum" class="has-mt">Enter your license number</label> 
                             <input style="height:46px;font-size:17px!important;margin-bottom:10px;width:100%;" type="text" class="form-control-md" id="licenseNum1" name="licenseNum1" title="Enter your Cosmetology license number." required="" maxlength="9" placeholder="Enter license number" value="HB111">
                           </div>
+                        </div>
+                      </div>
+
+
+                        <div class="" id="license2">
+                          <div class="row" id="licenseFormGroup2">
+                            <div class=" col-sm-5 col-md-5">
+                              <select aria-describedby="licenseHelp" name="licenseType2" id="licenseType2" required="" class="medium  form-control contact-usselect" tabindex="57">
+                                <option value="" selected="" disabled="">Select your license type</option>
+                                <option value="HB">HB - Hair Braider</option>
+                                <option value="HW">HW - Hair Wrapper</option>
+                                <option value="BW">BW - Body Wrapper</option>
+                              </select>
+                              <p></p>
+                            </div>
+                            <div class=" col-sm-5 col-md-5">
+                              <input style="height:46px;font-size:17px!important;margin-bottom:10px;width:100%" type="text" class="form-control-md" id="licenseNum2" name="licenseNum2" required="" maxlength="9" placeholder="Enter license number">
+                            </div>
+                            <div class=" col-sm-2 col-md-2" style="margin-top:17px;">
+                              <a href="http://localhost:8080/enterLicenseInfo.jsp?i=0#" style="margin-bottom:10px;margin-left:15px;text-decoration:none;color:red;font-size:24px;" onclick="deleteInput(&quot;licenseFormGroup2&quot;);">✖</a>
+                            </div>
                           </div>
                         </div>
-
-
-                        <div class="row" id="license2"><div class="form-group" id="licenseFormGroup2"><div class="add-margin col-sm-5 col-md-5"><select aria-describedby="licenseHelp" name="licenseType2" id="licenseType2" required="" class="medium  form-control" tabindex="57"><option value="" selected="" disabled="">Select your license type</option><option value="HB">HB - Hair Braider</option><option value="HW">HW - Hair Wrapper</option><option value="BW">BW - Body Wrapper</option></select><p></p></div><div class="add-margin col-sm-5 col-md-5"><input style="height:46px;font-size:17px!important;margin-bottom:10px;width:100%" type="text" class="form-control-md" id="licenseNum2" name="licenseNum2" required="" maxlength="9" placeholder="Enter license number"></div><div class="add-margin col-xs-2 col-sm-2 col-md-2" style="margin-top:17px;"><a href="http://localhost:8080/enterLicenseInfo.jsp?i=0#" style="margin-bottom:10px;margin-left:15px;text-decoration:none;color:red;font-size:24px;" onclick="deleteInput(&quot;licenseFormGroup2&quot;);">✖</a></div></div></div></div>
+                      </div>
                         <div class="row">
                           <div class="form-group add-margin" id="morelicenses" style="padding: 15px; display: none;">Do you have additional licenses to apply to this course?
                            <a href="http://localhost:8080/enterLicenseInfo.jsp?i=0#" style="margin-bottom:10px;margin-left:15px;" class="btn btn-primary btn-lg" role="button" onclick="addInput(&#39;licenseFormGroup&#39;);">Yes</a>                   
