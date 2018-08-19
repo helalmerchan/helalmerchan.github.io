@@ -1,0 +1,1150 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   GENERAL STYLES
+   ========================================================================== */
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    font: 400 15px/1.5em 'Raleway', sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1,h2,h3,h4{
+    font-family: 'Raleway', sans-serif;;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 20px;    
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+.row{
+    margin-left: -1%;
+    margin-right: -1%;
+}
+
+
+b{
+    font-weight: 700;
+}
+
+
+.lt-grey-bg{
+    background: #d9d9d9;
+}
+
+.section-padding{
+    padding: 60px 0;
+}
+
+i.fa{
+    font-size: 22px;
+}
+
+
+.ttu-red{
+    color: #cb0000;
+    font-size: 28px;
+}
+
+
+.heading-bb{
+    margin-bottom: 1.5em;
+}
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+.site-nav{
+    background: #555555;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.logo,
+.ph-email{
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+.ph-email{
+    padding: 25px 0;
+}
+
+.ph-email li a{
+   color: #000;
+   text-decoration: none;
+   vertical-align: middle;
+   font-weight: 700;
+}
+
+.ph-email li i.fa{
+   font-size: 16px;
+}
+
+
+.ph-email{
+    width: 90%;
+    float: left;
+}
+.social-links-header{
+    width: 10%;
+    float: right;
+}
+
+.social-links-header a{
+    color: #000;
+}
+
+.main-menu li a{
+    display: inline-block;
+
+}
+
+
+form#search-form{
+    background: #b6b5b5;
+    border-radius: 30px;
+    width: 100%;
+    height: 44px;
+}
+
+form input[type="text"]{
+    background: transparent;
+    outline: none;
+    border: none;
+    height: 100%;    
+    padding: 15px 1px 15px 20px;
+    width: 83%;
+    float: left;
+    border-radius: 30px 0 0 30px;
+}
+
+form input[type="text"]:focus{
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+form button[type="submit"]{
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 17%;
+    float: left;
+    height: 100%;    
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    border-radius: 0 30px 30px 0;
+}
+
+
+.main-menu li{   
+    padding: 10px 0;
+}
+
+.main-menu a{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    vertical-align: middle;
+    border-bottom: 2px solid transparent;
+}
+
+.main-menu a:hover{
+    border-color:  #cb0000;
+}
+
+
+
+/* ==========================================================================
+   Sprites icon
+   ========================================================================== */
+.site-icons{
+    margin-top: 10px;
+}
+.site-icons a{
+    display: inline-block;
+    padding: 10px;
+}
+
+.site-icons li:hover{
+    background: #cb0000;
+    color: #fff;
+}
+
+.site-icons li:hover a{
+    color: #fff;
+}
+
+.site-icons span{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+.icon{
+    display: inline-block;
+    width: 68px;
+    height: 68px;
+    background: url(../images/icon-sprites.png);
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.PalletRacking{
+    background-position: 0 0;
+}
+.HandLoadedRacking{
+    background-position: -68px 0;
+}
+.Shelving{
+    background-position: -136px 0;
+}
+.MezzanineFloors{
+    background-position: -204px 0;
+}
+.WorkplaceProducts{
+    background-position: -272px 0;
+}
+.SpecialOffers{
+    background-position: -340px 0;
+}
+
+.site-icons li:hover .PalletRacking{
+    background-position: 0 -70px;
+}
+
+.site-icons li:hover .HandLoadedRacking{
+   background-position: -68px -70px;
+}
+.site-icons li:hover .Shelving{
+    background-position: -136px -70px;
+}
+.site-icons li:hover .MezzanineFloors{
+   background-position: -204px -70px;
+}
+.site-icons li:hover .WorkplaceProducts{
+     background-position: -272px -70px;
+}
+.site-icons li:hover .SpecialOffers{
+    background-position: -340px -70px;
+}
+
+.site-icons li.icon-bg1:hover{
+    background: #00ccbb; 
+}
+.site-icons li.icon-bg2:hover{
+    background: #0033cc; 
+}
+.site-icons li.icon-bg3:hover{
+    background: #990099; 
+}
+.site-icons li.icon-bg4:hover{
+    background: #99cc00; 
+}
+.site-icons li.icon-bg5:hover{
+    background: #00ccff; 
+}
+.site-icons li.icon-bg6:hover{
+    background: #cb0000; 
+}
+
+
+/*Products*/
+.PalletRacking-wht{
+    background-position: 0 -70px;
+    text-align: center;
+}
+.HandLoadedRacking-wht{
+    background-position: -68px -70px;
+    text-align: center;
+}
+.Shelving-wht{
+    background-position: -136px -70px;
+    text-align: center;
+}
+.MezzanineFloors-wht{
+    background-position: -204px -70px;
+    text-align: center;
+}
+.WorkplaceProducts-wht{
+    background-position: -272px -70px;
+    text-align: center;
+}
+.SpecialOffers-wht{
+    background-position: -340px -70px;
+    text-align: center;
+}
+
+
+
+/***************hero image*****************/
+.hero-section img{
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 672px;
+}
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   SECTION-PRODUCTS
+   ========================================================================== */
+.section-products h3{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.section-products a{
+    text-decoration: none;
+    color: #000;
+}
+
+.section-products a:hover{
+    text-decoration: underline;
+    color: #cb0000;
+}
+
+.three-columns{
+    margin-bottom: 20px;
+}
+
+.section-products h3 span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.color1{
+    border: 1px solid #00ccbb;
+    padding: 2px 0 0 2px;
+}
+.color2{
+    border: 1px solid #0033cc;
+    padding: 2px 0 0 2px;
+}
+.color3{
+    border: 1px solid #990099;
+    padding: 2px 0 0 2px;
+}
+.color4{
+    border: 1px solid #99cc00;
+    padding: 2px 0 0 2px;
+}
+.color5{
+    border: 1px solid #00ccff;
+    padding: 2px 0 0 2px;
+}
+.color6{
+    border: 1px solid #cb0000;
+    padding: 2px 0 0 2px;
+}
+
+.color-border b{
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.color1 b{
+    background: #00ccbb;   
+}
+.color2 b{
+    background: #0033cc;
+}
+.color3 b{
+    background: #990099;
+}
+.color4 b{
+    background: #99cc00;
+}
+.color5 b{
+    background: #00ccff;
+}
+.color6 b{
+    background: #cb0000;
+}
+
+
+/* ==========================================================================
+   SERVICES
+   ========================================================================== */
+
+.white-bg{
+    background: #fff;
+    padding: 15px;
+}
+
+
+
+/* ==========================================================================
+   WE BUY RACKING
+   ========================================================================== */
+.we-buy,
+.overlay{
+    position: relative;
+}
+
+.overlay img{
+    display: inline-block;
+    margin: auto;
+    transition: .3s;
+}
+
+.link-overlay{
+    padding: 20px 35px;
+}
+
+
+.fa-caret-right{
+    color: #cb0000;    
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: -2px;
+    margin-top: -22px;
+    display: none;
+}
+
+.vam{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+
+.vbox{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.hover-link{
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 12px 8px;
+    border-radius: 10px 10px 0 0;
+    font-size: 22px;
+}
+
+
+/* ==========================================================================
+   TESTIMONIALS
+   ========================================================================== */
+.dark-grey-bg{    
+    background: #393939;
+    color: #fff;
+}
+
+.rating-box{
+    border: 1px solid #fff;
+    padding: 20px;    
+    position: relative;
+}
+
+.rating-box b{
+    display: block;
+    margin-top: 20px;
+}
+
+.rating-box:before{
+    content: "“”";
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    font-size: 78px;
+    color: #fff;
+    width: 60px;
+    height: 0;
+    border-bottom: 10px solid #393939;
+    border-top: 20px solid #393939;
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.owl-dots{
+    margin-top: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 50px;
+    height: 5px;
+    margin: 5px 7px;
+    background: #cb0000;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+    background:#393939
+}
+
+.owl-carousel .vbox{
+    padding: 15px 25px;
+}
+
+
+
+
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer-top{
+    background: #505050;
+    color: #fff;
+    padding: 60px 0;
+}
+
+.footer-top a{
+    display: inline-block;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer-top a:hover{
+    text-decoration: underline;
+}
+
+.footer-top h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-top h4,
+.footer-top p{
+   margin: 0;
+}
+
+
+.social-links-footer li{
+    display: inline-block;
+}
+
+.social-links-footer li a{
+    display: block;
+    padding: 10px;
+    color: #fff;
+}
+
+
+.footer-bottom{
+    background: #cb0000;
+    color: #fff; 
+    padding: 10px 0; 
+}
+
+.footer-bottom a{ 
+    display: inline-block;
+    color: #fff; 
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.footer-menu,
+.products-links,
+.footer-text{
+    padding-bottom: 30px;
+}
+
+
+
+/* ==========================================================================
+   RESPONSIVE STYLES
+   ========================================================================== */
+
+@media screen and (min-width: 510px){   
+    .site-icons li{
+        width: 50%;
+        float: left;
+    }
+
+    .three-columns{
+        width: 48%;
+        height: auto;
+        margin: 1%;
+        float: left;
+    }
+
+    .owl-carousel .vbox{
+        font-size: 14px;
+        line-height: 1.3em;
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    body{
+        font-size: 17px;
+    }
+    .flex-container{
+        display: flex;
+    }
+
+    .half-width{
+        flex: 1;
+    }
+
+    .three-columns30{
+        flex: 1;
+    }
+
+    .three-columns35{
+        flex: 1.5;
+    }
+
+    .footer-text{
+        flex: 2.5;
+    }
+
+    .footer-menu,
+    .products-links{
+        flex:  2;
+    }
+
+    .social-links-footer{
+        flex: 1.5;
+        text-align: center;
+    }
+
+    .ph-email li{
+       display: inline-block;
+       padding: 0 15px;
+    }
+   
+
+    .three-columns{
+        width: 31.33%;
+        height: auto;
+        margin: 1%;
+        float: left;
+    }
+
+    h1.logo{
+        width: 35%;
+        float: left;
+    }
+
+    .header-top-right{
+        width: 60%;
+        float: right;
+    }
+
+    .main-menu{
+        width: 66%;
+        float: left;
+    }  
+
+    .main-menu li{
+        padding: 7px 20px 7px 0;
+        float: left;
+    }
+
+    form#search-form{
+        width: 34%;
+        height: 44px;
+        float: right;    
+    }
+
+    .site-icons li{
+        width: 33.33%;
+        float: left;
+    }
+
+    .products-links,
+    .footer-menu{
+        width: 50%;
+        float: left;
+    }
+    
+    .section-products h3{
+        font-size: 18px;
+    }
+
+    .footer-top p{
+       font-size: 14px;
+       line-height: 1.5em;
+    }
+
+    .social-links-footer{
+        float: left;
+    }
+
+
+    .overlay{
+        overflow: hidden;        
+        transition: .3s;
+    }   
+
+    .link-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(203,0,0,.76);
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        opacity: 0;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+    .white-overlay{
+        background: rgba(82,82,82,.76);
+    }
+
+    .overlay:hover .link-overlay{
+        opacity: 1;
+    }
+
+    .overlay:hover img{
+        transform: scale(1.20);
+    }
+
+    .three-columns30{
+        border: 2px solid transparent;
+    }
+
+    .hover-link{
+        position: absolute;
+        right: 25px;
+        bottom: 0;
+    }
+
+    .flex-container:hover .three-columns30{
+        border-color: #cb0000;
+    }
+    
+    .flex-container:hover .fa-caret-right{
+        display: block;
+    }
+
+    .owl-carousel .vbox{
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    body{
+        font-size: 20px;
+    }
+
+    .section-padding{
+        padding: 80px 0;
+    }
+
+    h1.logo{
+        width: 40%;
+    }
+
+    .header-top-right{
+        width: 50%;
+    }
+
+    .main-menu li{   
+        padding: 7px 20px;
+    }
+
+    .main-menu a{
+        font-size: 16px;
+    }
+
+    form#search-form{
+        width: 30%;
+    }
+  
+
+    .site-icons li{
+        width: 16.66%;
+        float: left;
+    }
+      
+
+    .section-products h2,
+    .ttu-red{
+        font-size: 1.7em;
+        line-height: 1.2em;
+    }
+
+
+    .section-products h3{
+        font-size: 28px;
+    }
+
+
+    .section-testimonials .vbox{
+        padding: 45px;
+    }  
+
+    .rating-box{
+        padding: 30px;
+        font-size: 17px;
+        line-height: 1.3em;
+    }
+
+    .footer-menu,
+    .products-links,
+    .footer-text{
+        padding-bottom: 0;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1440px){
+    .section-testimonials .vbox{
+        padding: 50px;
+    }  
+    .rating-box,
+    .rating-box b{
+        padding: 30px;
+        font-size: 20px;
+        line-height: 1.5em;
+    }
+
+
+    .ph-email li a,
+    .ph-email li i.fa{
+       font-size: 22px;
+    }
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.row:before,
+.row:after,
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.row:after,
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
