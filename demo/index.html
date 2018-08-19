@@ -23,12 +23,25 @@
   table, tr, td {
     border: 1px solid black;
   }
-  table {
-    width: 100%;
-  }
-  td {
-    padding: 5px;
-  }
+
+  .table-container{
+      width: 100%;
+      overflow-y: auto;
+      _overflow: auto;
+      margin: 0 0 1em;
+    }
+    
+    .table-container::-webkit-scrollbar{
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+    }
+    
+    .table-container::-webkit-scrollbar-thumb{
+      border-radius: 8px;
+      border: 3px solid #fff;
+      background-color: rgba(0, 0, 0, .3);
+    }
 </style>
 <style>@media print {#ghostery-purple-box {display:none !important}}</style></head>
 <body class="load">
@@ -74,35 +87,34 @@
       </ul><p></p>
       <h5>Your Classes</h5>
       <div style="clear: both;">
-     
-      <div class="table-responsive">
-        <table class="table">
-          <tr>
-            <td><b>ClassName</b></td>
-            <td><b>Date Purchased</b></td>
-            <td><b>Date Completed</b></td>
-            <td><b>Test</b></td>
-            <td><b>Course Media</b></td>
-            <td><b>Completion Certi   Take Test Dficate</b></td>
-          </tr>
-          <tr>
-            <td>2-HOUR HIV/AIDS COURSE</td>
-            <td>08/06/2018</td>
-            <td>08/06/2018</td>
-            <td>100%</td>
-            <td><a href="https://www.renewcosmetology.com/HIV-2-Hour-Book.pdf" target="_blank">Download Textbook</a></td>
-            <td><a href="https://www.renewcosmetology.com/downloadpdf?i=0" target="_blank">Download Certificate</a></td>
-          </tr>
-          <tr>
-            <td>16 hour cosmetology class</td>
-            <td>08/16/2018</td>
-            <td></td>
-            <td><a href="https://www.renewcosmetology.com/test.jsp?i=1">Take Test</a></td>
-            <td><a href="https://www.renewcosmetology.com/16-Hour-Cosmo-Continuing-Education.pdf" target="_blank">Download Textbook</a></td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
+        <div class="table-container">
+          <table class="table">
+            <tr>
+              <td><b>ClassName</b></td>
+              <td><b>Date Purchased</b></td>
+              <td><b>Date Completed</b></td>
+              <td><b>Test</b></td>
+              <td><b>Course Media</b></td>
+              <td><b>Completion Certi   Take Test Dficate</b></td>
+            </tr>
+            <tr>
+              <td>2-HOUR HIV/AIDS COURSE</td>
+              <td>08/06/2018</td>
+              <td>08/06/2018</td>
+              <td>100%</td>
+              <td><a href="https://www.renewcosmetology.com/HIV-2-Hour-Book.pdf" target="_blank">Download Textbook</a></td>
+              <td><a href="https://www.renewcosmetology.com/downloadpdf?i=0" target="_blank">Download Certificate</a></td>
+            </tr>
+            <tr>
+              <td>16 hour cosmetology class</td>
+              <td>08/16/2018</td>
+              <td></td>
+              <td><a href="https://www.renewcosmetology.com/test.jsp?i=1">Take Test</a></td>
+              <td><a href="https://www.renewcosmetology.com/16-Hour-Cosmo-Continuing-Education.pdf" target="_blank">Download Textbook</a></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
       </div>
       <p>Remember, you still need to pay the DBPR to renew your license. Renew your license <a href="https://www.myfloridalicense.com/datamart/mainMenuFLDBPR.do" target="_blank">here</a>.<br>You may verify your license status <a target="_blank" href="https://www.myfloridalicense.com/wl11.asp?mode=0&amp;SID">here</a>.</p>
     </div>
