@@ -51,8 +51,8 @@
 
 
   //VIDEO BACKGROUND
-  $('.site-header').vidbg({
-      'mp4': 'videos/videobground.mp4',
+  $('.site-header').vidbg({      
+      'mp4': 'videos/videobg.mp4',
       'poster': 'images/header-bg.jpg',
   }, {
     // Options
@@ -60,7 +60,7 @@
     // loop: false,
     overlay: true,
     overlayColor: '#030f17',
-    overlayAlpha: '0.7',
+    overlayAlpha: '0.6',
   });
 
 
