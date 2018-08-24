@@ -145,9 +145,8 @@ body{
 
 .hero-img{
     margin-top: 80px;
-    background: url(../images/home-bg.jpg) no-repeat center center fixed / cover;
-    width: 100%;
-    min-height: 650px;
+    background: url(../images/home-bg.jpg) no-repeat center center / 100% 100%;
+    min-height: 750px;
 }
 .savauno-logo img{
     display: inline-block;
@@ -176,7 +175,7 @@ body{
 }
 
 .middle-img{    
-    min-height: 650px;
+    min-height: 750px;
     background: url(../images/middle-img.jpg) no-repeat center center fixed / cover;
 }
 
