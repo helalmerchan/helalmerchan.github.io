@@ -88,11 +88,11 @@ a.logo{
 }
 .navbar-inverse .navbar-toggle .icon-bar,
 .navbar-toggle .icon-bar{
-    background: #27b1af;
+    background: #0d014b;
 }
 .navbar-inverse .navbar-toggle,
 .navbar-toggle{
-    border-color: #27b1af;
+    border-color: #0d014b;
     padding: 7px;
 }
 
@@ -110,7 +110,7 @@ a.logo{
     border: 1px solid #000;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 9px 15px;
+    padding: 7px 15px;
     cursor: pointer;    
     font-weight: 400;
 }
