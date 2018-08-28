@@ -367,13 +367,14 @@ h1.logo a small{
        font-size: 18px;
        line-height: 27px;
     }
+
     h1.logo{
         margin-left: 0;
     }
 
     .home-banner h2{
-       font-size: 36px;
-       line-height: 36px;
+       font-size: 66px;
+       line-height: 66px;
        font-weight: 300;
     } 
 
@@ -394,8 +395,19 @@ h1.logo a small{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
-  
-    
+  .container{
+    width: 98%;
+  }
+
+  .home-banner h2{
+     font-size: 46px;
+     line-height: 46px;
+  } 
+
+  .nav > li > a {
+      padding: 10px 10px;
+  }
+
 }
 
 /* ==========================================================================
