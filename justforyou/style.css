@@ -283,7 +283,7 @@ h1.logo a small{
 **************************************************************/
 
 .home-page{   
-    background: #fff url(img/banner.jpg) no-repeat center center fixed / cover;   
+    background: #fff url(img/banner.jpg) no-repeat center center / cover;   
 }
 
 .home-page h2{
