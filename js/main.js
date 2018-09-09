@@ -52,7 +52,7 @@
 
   //VIDEO BACKGROUND
   $('.site-header').vidbg({      
-      'mp4': 'videos/videobg.mp4',
+      'mp4': 'videos/Background.MP4',
       'poster': 'images/header-bg.jpg',
   }, {
     // Options
