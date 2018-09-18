@@ -182,7 +182,9 @@ img {
     font-size: 12px;
 }
 
-
+.in{
+	background: #080808;
+}
 
 /*Hero*/
 .banner{
