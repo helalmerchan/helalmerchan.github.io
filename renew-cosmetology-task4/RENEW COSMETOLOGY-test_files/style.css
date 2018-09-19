@@ -177,10 +177,7 @@ p.no-mt{
 
 .panel-body textarea{width: 75%;}
 @media screen and (max-width: 640px){
-	.panel-body textarea,
-	.panel-body input{
-		width: 100%;
-	}
+	
 	.panel-body {
 		padding: 15px 5px;
 		margin-left: 0;
