@@ -122,72 +122,71 @@ p.no-mt{
 
 
 /*TRUE FALSE RADIO*/
-[type="radio"]:checked,
-[type="radio"]:not(:checked) {
-    position: absolute;
-    left: -9999px;
+.tf-12 li{
+	position: relative;
+	display: inline-block;
+	width: 66px;
+	height: 36px;
+	line-height: 36px;
 }
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label
-{
-    position: relative;
-    padding-left: 28px;
-    cursor: pointer;
-    line-height: 25px;
-    display: inline-block;
-    color: #000;
-    font-weight: normal;
+
+
+.visuallyhidden {
+  opacity: 0;
+  visibility: hidden;
 }
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
+.customradio + label {
+	text-align: center;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	color: #337ab7;
+	box-shadow: inset 0 0 0 1px rgb(51,122,183);
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	/*border-radius: 2px;*/
+}
+.customradio + label:before {
+    content: "";
+    width: 100%;
+    height: 100%;
     
-    box-shadow: 0 0 0 2px rgba(51,122,183,.3);
-    border-radius: 100%;
-    background: rgba(51,122,183,.2);
-}
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: #337ab7;
+    background: transparent;
     position: absolute;
-    top: 4px;
-    left: 4px;
-    border-radius: 100%;
-    -webkit-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    top: 0;
+    left:0;
+    z-index: -1;
+
+    /*border-radius: 2px;*/
 }
-[type="radio"]:not(:checked) + label:after {
-    opacity: 0;
-    -webkit-transform: scale(0);
-    transform: scale(0);
+.customradio:checked + label{
+    color: #fff;    
+    background: #337ab7;
 }
-[type="radio"]:checked + label:after {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
+
+.customradio:checked + label:focus {
+  outline: 3px solid black;
+  outline: 3px auto -webkit-focus-ring-color;
 }
+
+
 
 
 .panel-body textarea{width: 75%;}
 @media screen and (max-width: 640px){
-  .panel-body textarea,
-  .panel-body input{
-    width: 100%;
-  }
+	.panel-body textarea,
+	.panel-body input{
+		width: 100%;
+	}
 	.panel-body {
-	    padding: 15px 5px;
-	    margin-left: 0;
-    }
-    
-    .column,
+		padding: 15px 5px;
+		margin-left: 0;
+	}
+
+	.column,
 	.tf-panel {
 		padding-left: 0;
 		padding-right: 0;
