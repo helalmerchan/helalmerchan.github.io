@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*** Product Page ***/
+.catalogue-rack-boxes {
+	margin: 0 -10px;
+	margin-bottom: 15px;
+	margin-top: -20px;
+	overflow: hidden;
+}
+.catalogue-rack-boxes .box-row {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+	margin-bottom: 1.8%;
+}
+.catalogue-rack-boxes .box-row:first-child {
+    width: 50%;
+}
+.catalogue-rack-boxes .box-row > .fields-wrap{
+	background: #b7b7b7;
+	padding: 10px;	
+    font-weight: bold;
+    text-align: center;
+}
+.catalogue-rack-boxes .box-row > .fields-wrap img{
+	border: 1px solid #000;
+}
+.catalogue-rack-boxes .box-row:first-child > .fields-wrap h2{
+	font-size: 60px;
+	max-width: 520px;
+    margin: 0 auto;
+	padding: 10px 0;
+}
+.catalogue-rack-boxes .box-row > .fields-wrap h3{
+	font-size: 30px;
+	max-width: 250px;
+    margin: 0 auto;
+	padding: 5px 0;
+}
+
+
+
+.catalogue-rack-boxes .box-row-first {
+    width: 20%;
+    float: left;
+    padding: 0 10px;
+	margin-bottom: 1.8%;
+}
+.catalogue-rack-boxes .box-row-first > .fields-wrap{
+	background: #b7b7b7;
+	padding: 0px;	
+    font-weight: bold;
+    text-align: center;	
+	border: 1px solid #000;
+}
+.catalogue-rack-boxes .box-row-first > .fields-wrap img{
+	width: 100%;
+	height: 210px;
+	background-color: #fff;
+}
+.catalogue-rack-boxes .box-row-first .fields-wrap h2{
+	font-size: 20px;
+    margin: 0 auto;
+	padding: 6px 0 10px 0;
+	color: #fff;
+}
+.catalogue-rack-boxes .box-row-first > .fields-wrap h3{
+	font-size: 30px;
+    margin: 0 auto;
+	padding: 5px 0;
+}

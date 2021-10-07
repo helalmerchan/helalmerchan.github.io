@@ -1,0 +1,139 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+
+    <title>The Used Racking Company&nbsp;&nbsp;|&nbsp;&nbsp;Home&nbsp;&nbsp;|&nbsp;&nbsp;Catalogue</title>
+    <cfset lv_page_id = "34">
+    <cfset lv_pare_id = "34">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="description" content="The Used Racking Company's storage catalogue">
+		<meta name="author" content="">
+			<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/cycle2.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+		<link rel="stylesheet" type="text/css" href="js/fancyapps/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+		<link rel="stylesheet" type="text/css" href="css/style-catalogue-07feb.css">		
+			<!-- JS  -->
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+		<script type="text/javascript" src="js/fancyapps/source/jquery.fancybox.js?v=2.1.5"></script>
+		<script type="text/javascript" src="js/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	<cfinclude template="google-analytics.cfm">
+
+	</head>
+
+		<cfif not isdefined("url.page_id")>
+			<cfset url.page_id = 34>
+		</cfif>
+	
+<body>
+		
+		<div class="main-wrapper">
+		<div class="header">
+			<div class="logo">
+				<a href="/">
+					<img src="images/logo.png">
+				</a>
+			</div>
+			<div class="header-right">
+				<span><img src="images/head.png"></span> 
+				<a href="tel:+441753693200">
+				<span class="no1">01753 </span> 
+				<span class="no2">693200</span>
+				</a>
+				<div>
+					<span class="email"><a href="contact-us-7.cfm">sales@hcss.co.uk</a></span>
+					<span class="facebook"><a href="https://www.facebook.com/TheUsedRacking/"><img src="images/facebookicon.jpg"></a></span>&nbsp;&nbsp;
+					<span class="twitter"><a href="https://twitter.com/TheUsedRacking?lang=en"><img src="images/icon1.jpg"></a></span>&nbsp;&nbsp;
+					<span class="linkedin"><a href="https://www.linkedin.com/company/hcssltd/"><img src="images/inicon.jpg"></a></span>
+				</div>
+			</div>
+		</div>
+<div class="main-menu" id="awmAnchor-menu">
+			<div class="menu-bar">
+				<ul class="menu">
+					<li><a href="index.cfm">HOME</a></li>
+					<li><a href="#">ABOUT US</a>
+						<ul>
+							<li><a href="about-the-used-racking-3.cfm">About The Company</a></li>
+							<li><a href="testimonials.cfm">Testimonials</a></li>
+							<li><a href="faq.cfm">Frequently Asked Questions</a></li>
+						</ul>			
+					<li><a href="#">PRODUCTS</a>
+						<ul>
+							<li><a href="warehouse-pallet-racking-35.cfm">Pallet Racking</a></li>
+							<li><a href="general-purpose-racking-34.cfm">Racking</a></li>
+							<li><a href="industrial-office-shelving-33.cfm">Lighter Duty Shelving</a></li>
+							<li><a href="mezzanine-floors-39.cfm">Mezzanine Floors</a></li>
+							<li><a href="racking-accessories-38.cfm">Workplace Products</a></li>
+							<li style="background-color: red"><a href="clearance-racking-37.cfm">Special Offers</a></li>
+						</ul>
+					</li>
+					<li><a href="#">SERVICES</a>
+						<ul>
+							<li><a href="quotes-and-site-visits-40.cfm">Quotes/Site Visits</a></li>
+							<li><a href="we-buy-racking-6.cfm">We Buy Racking</a></li>
+							<li><a href="racking-project-management-4.cfm">Installations</a></li>
+							<li><a href="Finance.cfm">Finance</a></li>
+						</ul>					
+
+
+					<li><a href="catalogue.cfm?catalogue=yes">Catalogue</a></li>
+	
+															
+					<li><a href="contact-us-7.cfm">CONTACT US</a></li>
+
+				</ul>
+			</div>
+			<div class="search-box">
+				<form action="search-results.cfm" onSubmit="" method="post" >
+				<cfoutput>
+					<cfset thisno = #randrange(1000000,9999999)#>
+ 					<cfset session.mysearch = "#thisno#">                   
+                    			<input type="hidden" name="wherefrom" value="#session.mysearch#" />
+            			</cfoutput>				
+            			<input id="txtSearch" name="txtSearch" type="text" class="searchkeyword" maxlength="60" placeholder="search"/>
+               	</form>
+			</div>
+		</div>
+		<ul class="menu-2">
+			<li><a href="warehouse-pallet-racking-35.cfm">Pallet Racking</a></li>
+			<li><a href="general-purpose-racking-34.cfm">Racking</a></li>
+			<li><a href="industrial-office-shelving-33.cfm">Lighter Duty Shelving</a></li>
+			<li><a href="mezzanine-floors-39.cfm">Mezzanine Floors</a></li>
+			<li><a href="racking-accessories-38.cfm">Accessories</a></li>
+			<li><a href="clearance-racking-37.cfm">Special Offers</a></li>
+		</ul>
+<!---end of nav beginning of body--->
+<div class="main-container not-front">
+<h1 class="page-title">Storage Products Catalogue</h1>
+	<p style="margin-bottom: 20px;">To purchase a product shown on any of the pages below locate the product code and call 01753 693 200. </p>
+
+<cfoutput>
+			<cfif isdefined ("url.searchdoc")>
+				<iframe src="documents/#url.page#" width="100%" height="900px" frameborder="0">
+			<cfelse>
+				<iframe src="documents/#url.page#.pdf" width="100%" height="900px" frameborder="0">
+			</cfif>
+</cfoutput>
+		</div>		
+
+
+	
+		<div class="footer">
+			<div class="left">Part of Home Counties Storage Systems</div>
+			<div class="right"><a href="terms-and-conditions-13.cfm">Terms and Conditions</a> | <a href="data-privacy-policy.cfm">Data Privacy</a> | <a href="copyright-10.cfm">Copyright</a></div>
+		</div>
+	</div>
+
+<cfinclude template="IP-analytics.cfm">
+<cfinclude template="boldchat.cfm">
+</body>
+</html>  
+

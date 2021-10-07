@@ -1,0 +1,614 @@
+
+/***********************************/
+/*HOME-PAGE-2
+/***********************************/
+
+h1.logo-home {
+    width: 65%;
+}
+
+
+.section-8-items {
+    padding: 30px 0;
+}
+
+.hero-8-items li {
+    margin: 15px .5%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .2);
+}
+
+.hero-8-items li img {
+    display: block;
+    width: 100%;
+}
+
+.hero-8-items li a {
+    display: block;
+    text-decoration: none;
+    color: #666666;
+}
+
+.hero-8-items li a h4 {
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.hero-8-items li:hover {
+    box-shadow: 0 0 0 1px #cb0000;
+}
+
+.grey-bg {
+    background: #ebebeb;
+}
+
+.white-bg1 {
+    display: table;
+    background: #fff;
+    width: 100%;
+    min-height: 350px;
+}
+
+.hero {
+    padding: 35px 0;
+}
+
+.hero h5 {
+    margin: 0;
+}
+
+.hero figure:first-child {
+    margin-bottom: 52px;
+}
+
+figure {
+    margin: 0 0 30px 0;
+    padding: 0;
+}
+
+figcaption h2,
+figcaption h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+figcaption h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.buy-btn {
+    background: #aa1306;
+    display: inline-block;
+    color: #fff;
+    padding: 9px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .2s;
+    margin-top: 20px;
+}
+
+.buy-btn:hover {
+    background: #c31809;
+}
+
+.shop-now {
+    color: #fff;
+    background: transparent;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+}
+
+.pd-lr {
+    padding: 0 15px;
+}
+
+h3.dark-bg {
+    font-weight: 600;
+    text-transform: none;
+}
+
+.dark-bg {
+    background: #555555;
+    font-weight: 600;
+    color: #fff;
+    padding: 3px;
+}
+
+.red-bg {
+    background: #ff0000;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.purple {
+    color: #fff;
+    background: #bf5fbf;
+}
+
+.aqua {
+    color: #fff;
+    background: #00ccff;
+}
+
+.red-bg h4 {
+    font-size: 95%;
+    margin-bottom: 0;
+}
+
+.red-bg-1 {
+    background: #cb0000;
+    color: #fff;
+}
+
+.has-mt {
+    display: block;
+    margin-top: 5px;
+}
+
+.offers li {
+    margin-bottom: 20px;
+    border: 1px solid #555;
+}
+
+.offers li:first-child img {
+    display: block;
+    width: 97%;
+}
+
+.vam1 {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.vam1 h3 {
+    margin-top: 15px;
+}
+
+.vam1 a {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.offers {
+    max-width: 380px;
+    margin: auto;
+}
+
+.upper-c {
+    text-transform: capitalize;
+}
+
+.overlay1 {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.overlay1 img {
+    display: inline-block;
+    margin: 0 auto 10px;
+    transition: .3s;
+}
+
+.rating-box-n {
+    padding: 20px;
+    position: relative;
+}
+
+.section-testimonials-1 .rating-box-n:before {
+    content: "";
+    width: 120px;
+    height: 96px;
+    background: url(../images/quote-icons.png);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    z-index: -1;
+}
+
+.section-testimonials-1 .rating-box-n:after {
+    content: "";
+    width: 120px;
+    height: 96px;
+    background: url(../images/quote-icons.png);
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    z-index: -1;
+    transform: rotate(180deg);
+}
+
+.section-testimonials-1 .owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 20px;
+    margin: 5px 7px;
+    background: #898989;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 100px;
+}
+
+.section-testimonials-1 .owl-theme .owl-dots .owl-dot.active span,
+.section-testimonials-1 .owl-theme .owl-dots .owl-dot:hover span {
+    background: #cb0000;
+}
+
+@media screen and (min-width: 768px) {
+    h1.logo-home {
+        width: 40%;
+    }
+    .narrow-wrap {
+        max-width: 870px;
+        margin: auto;
+    }
+    .ph-email {
+        text-align: left;
+        margin-top: 0;
+    }
+    .ph-email p i.fa {
+        font-size: 18px;
+        vertical-align: middle;
+    }
+    .caption-text {
+        color: #fff;
+    }
+    .overlay1 {
+        position: relative;
+    }
+    .link-overlay1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(203, 0, 0, 1);
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        opacity: 0;
+        padding: 10px 15px;
+    }
+    .overlay1:hover .link-overlay1 {
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product a,
+    .product a:hover {
+        color: #fff;
+    }
+    .left-3-of-4 {
+        width: 77%;
+        float: left;
+    }
+    .right-1-of-4 {
+        width: 20%;
+        float: left;
+        margin-left: 1%;
+    }
+    figure {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+    figcaption {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        vertical-align: middle;
+        background: rgba(0, 0, 0, .6);
+        transform: translateY(-50%);
+        color: #fff;
+        padding: 25px 15px;
+    }
+    figcaption h2,
+    figcaption h3 {
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    .footer-menu {
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1.logo-home {
+        width: 50%;
+    }
+    .rating-box-n,
+    .rating-box-n b {
+        padding: 30px;
+        font-size: 24px;
+        line-height: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .rating-box-n,
+    .rating-box-n b {
+        padding: 30px;
+        font-size: 28px;
+        line-height: 1.5em;
+    }
+}
+
+/***************************************/
+
+/*TESTIMONIALS-FORM
+/***************************************/
+
+.testimonials-form {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.testimonials-form h4 {
+    font-weight: 700;
+}
+
+.testimonials-form form {
+    margin-top: 40px;
+    display: block;
+}
+
+.d-flex label {
+    display: block;
+}
+
+.testimonials-form input[type="text"],
+.testimonials-form input[type="text"]:focus {
+    border: 1px solid #e3e3e3;
+    border-radius: 0;
+    height: 40px;
+    max-width: 370px;
+}
+
+.testimonials-form textarea {
+    border: 1px solid #e3e3e3;
+    height: 200px;
+    width: 100%;
+}
+
+.testimonials-form input[type="submit"] {
+    margin-left: 20%;
+    background: #990100;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.testimonials-form input[type="submit"]:hover {
+    background: #b00706;
+}
+
+@media (min-width: 510px) {
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    .d-flex label {
+        width: 15%;
+    }
+    .testimonial-inputs {
+        width: 85%;
+    }
+}
+
+/*******************************/
+
+/* Landing Pages
+/********************************/
+.reason-icons{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.reason-icons h4{
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.landing-page-2 p {
+    font-size: 17px;
+}
+
+.landing-page-2 .offers li {
+    border: 1px solid #a3a3a3;
+}
+
+.owlcarousel-1 {
+    position: relative;
+    width: 88%;
+    margin: auto;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    background: #555555;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 30px;
+    text-indent: -9999px;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    left: -6%;
+    background: #555555 url(../images/carsl-left-icon-sm.png) no-repeat center center;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    right: -6%;
+    background: #555555 url(../images/carsl-right-icon-sm.png) no-repeat center center;
+}
+
+.owlcarousel-1 .item {
+    padding: 10px;
+    border: 1px solid #a3a3a3;
+}
+
+.four-cols .items {
+    padding: 10px;
+    border: 1px solid #a3a3a3;
+}
+
+a.more-details {
+    text-decoration: none;
+    display: inline-block;
+    background: #cb0000;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.four-cols {
+    margin-top: 30px;
+}
+
+h3.lowercase {
+    text-transform: none;
+    font-weight: 400;
+    color: #555555;
+}
+
+h3.bordered {
+    border: 2px solid #555555;
+    padding: 7px;
+}
+
+.Sign-Up .container {
+    padding: 0 15px;
+}
+
+.Sign-Up form {
+    display: block;
+}
+
+.Sign-Up form li {
+    margin-top: 25px;
+}
+
+.Sign-Up form input[type="email"],
+.Sign-Up form input[type="text"] {
+    background: #fff;
+    border: 1px solid #aa1306;
+    width: 100%;
+    border-radius: 0;
+    padding: 10px 15px;
+    height: 43px;
+    font-size: 80%;
+    float: none;
+}
+
+.half {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.signup-submit {
+    max-width: 450px;
+    margin: auto;
+}
+
+.signup-submit img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.signup-submit button[type="submit"] {
+    background: #aa1306;
+    color: #fff;
+    text-transform: uppercase;
+    display: block;
+    width: 170px;
+    padding: 9px 15px;
+    border-radius: 0;
+}
+
+@media (min-width: 510px) {
+    .hero-8-items li {
+        width: 48%;
+        float: left;
+    }
+    .four-cols li {
+        width: 48%;
+        float: left;
+        margin: 1%;
+    }
+    .Sign-Up form li {
+        width: 30.33%;
+        float: left;
+        margin: 15px 1.5%;
+    }
+    .half {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .left-3-4 {
+        width: 74%;
+        float: left;
+        margin-right: 1%;
+    }
+    .right-1-4 {
+        width: 24%;
+        float: left;
+        margin: 0 .5%;
+    }
+    .landing-page-2 .right-1-4 {
+        margin-top: 30px;
+    }
+    .owl-carousel .owl-nav button.owl-next,
+    .owl-carousel .owl-nav button.owl-prev {
+        width: 50px;
+    }
+    .owl-carousel .owl-nav button.owl-prev {
+        left: -6%;
+        background: #555555 url(../images/carsl-left-icon.png) no-repeat center center;
+    }
+    .owl-carousel .owl-nav button.owl-next {
+        right: -6%;
+        background: #555555 url(../images/carsl-right-icon.png) no-repeat center center;
+    }
+    .hero-icons li {
+        width: 25%;
+        float: left;
+        padding: 15px;
+    }
+    .Sign-Up .container {
+        width: 85%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .hero-8-items li {
+        width: 24%;
+        float: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .four-cols li {
+        width: 24%;
+        float: left;
+        margin: .5%;
+    }
+    .Sign-Up .container {
+        width: 70%;
+    }
+}

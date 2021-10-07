@@ -1,0 +1,110 @@
+<!-- HEADER -->
+      <header class="site-header">
+
+        <!-- Header top -->
+        <div class="container">
+          <div class="header-top">
+            <div class="row">
+              <!-- Logo -->
+              <h1 class="logo"><a href="/"><img src="images/logo.png" alt="The Used Racking Company logo"></a></h1>
+
+              <!-- Nav-trigger -->
+              <span class="hamburger-icon hide-sm">
+                <span class="line">
+                  <span class="middle-icon"></span>
+                </span>
+              </span><!--End Nav-trigger --> 
+
+              <div class="header-top-right">
+
+                <div class="flex-container-header">
+                  <!-- Phone + email -->
+                  <div class="ph-email">
+                    <p>
+					<i class="fa fa-phone"></i><a href="tel:+441753693200"><b class="muli-font"><span>01753</span> 693200</b></a><br>
+						<i class="fa fa-phone"></i><a href="tel:+441753512929"><b class="muli-font"><span>01753</span> 512929</b></a></p>
+                    <a href="mailto:sales@hcss.co.uk"><i class="fa fa-envelope"></i> sales@hcss.co.uk</a>
+                  </div>               
+                  
+                   
+                  <div class="email-social hide-xs">
+                    <!-- Social links -->
+                    <ul class="social-links-header text-center">                    
+                      <li><a href="https://www.facebook.com/TheUsedRacking/" target="new"><i class="fab fa-facebook-f"></i></a></li>                
+                      <li><a href="https://twitter.com/TheUsedRacking?lang=en" target="new"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="https://www.linkedin.com/company/hcssltd/" target="new"><i class="fab fa-linkedin-in"></i></a></li>
+                    </ul> 
+                  </div> 
+                </div>
+              </div>          
+            </div>
+          </div>
+        </div><!--End Header top -->
+
+
+        
+        <!-- Header Nav -->
+        <nav class="container">
+          <div class="site-nav">
+            <div class="row">
+              <!-- Main Menu -->
+              <ul class="main-menu clearfix sf-menu-sm toggle-menu">
+                <li><a href="/">home</a></li>
+                <li><a href="##">About us</a>
+                  <ul>                
+                    <li><a href="about-the-used-racking-3.cfm">All About Us</a></li>
+                    <li><a href="testimonials.cfm">Testimonials</a></li>
+                    <li><a href="FAQ.cfm">FAQ</a></li>
+                    
+                  </ul>
+                </li>
+                <li><a href="##">products</a>
+                  <ul>
+                    <li><a href="warehouse-pallet-racking-35.cfm">Pallet Racking</a></li>
+                    <li><a href="general-purpose-racking-34.cfm">Racking</a></li>
+                    <li><a href="industrial-office-shelving-33.cfm">Shelving</a></li>
+                    <li><a href="mezzanine-floors-39.cfm">Mezzanine Floors</a></li>
+                    <li><a href="racking-accessories-38.cfm">Covid&#45;19 Protection</a></li>
+                    <li><a href="clearance-racking-37.cfm">Online Offers</a></li>
+                    <li><a href="catalogue.cfm?catalogue=yes">catalogue</a></li>
+                  </ul>
+                </li>
+                <li><a href="##">Services</a>
+                  <ul>                
+                    <li><a href="we-buy-racking-6.cfm">We Buy Racking</a></li>
+                    <li><a href="quotes-and-site-visits-40.cfm">Site Visits</a></li>
+                    <li><a href="racking-project-management-4.cfm">Installations</a></li>
+			<li><a href="finance.cfm">Finance</a></li>  
+                  </ul>
+                </li>
+                <li><a href="contact-us-7.cfm?quickquote=yes">quick quotes</a></li>
+                <li><a href="contact-us-7.cfm">contact us </a></li>
+              </ul><!--End Main Menu -->
+
+              <!-- Search Form-->
+              <form class="hide-xs clearfix" action="search-results.cfm" id="search-form" method="post" onSubmit="" >
+                  <cfoutput>
+                    <cfset thisno = #randrange(1000000,9999999)#>
+                    <cfset session.mysearch = "#thisno#">                   
+                    <input type="hidden" name="wherefrom" value="#session.mysearch#" />
+                  </cfoutput> 
+                
+                  <input name="txtSearch" id="txtSearch" type="text" class="searchkeyword" maxlength="60" placeholder="search"/>
+                  <button type="submit" name="search" id="search-btn"><i class="fa fa-search"></i></button>
+              </form><!--End Search Form-->           
+            </div>
+          </div>
+        </nav><!--End Header Nav -->
+
+        <div class="container">
+          <!-- Product icon -->
+          <ul class="site-icons hide-xs text-center clearfix">
+            <li class="icon-bg1"><a href="warehouse-pallet-racking-35.cfm" class="clearfix"><em class="turcicon-pallet"></em><span>Pallet<br>Racking</span></a></li>
+            <li class="icon-bg2"><a href="general-purpose-racking-34.cfm" class="clearfix"><em class="turcicon-rack-6"></em><span>Racking</span></a></li>
+            <li class="icon-bg3"><a href="industrial-office-shelving-33.cfm" class="clearfix"><em class="turcicon-shelving"></em><span>Shelving</span></a></li>
+            <li class="icon-bg4"><a href="mezzanine-floors-39.cfm" class="clearfix"><em class="turcicon-rack-2"></em><span>Mezzanine<br>Floors</span></a></li>
+            <li class="icon-bg5"><a href="racking-accessories-38.cfm" class="clearfix"><em class="turcicon-rack-3"></em><span>Workplace<br>Products</span></a></li>
+            <li class="icon-bg6"><a href="clearance-racking-37.cfm" class="clearfix"><em class="turcicon-rack-4"></em><span>Quick<br>Deals</span></a></li>
+          </ul><!--End Product icon -->
+        </div>
+      </header><!--END HEADER -->

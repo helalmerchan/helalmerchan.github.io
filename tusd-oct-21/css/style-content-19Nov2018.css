@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content-main{ 
+	max-width: 980px;
+	margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+	.content-main{ 
+		margin: 0px 250px 0px 250px;
+	}
+}
+
+.content-main-catalogue{ 
+	margin: 0px 40px 0px 40px;
+}
+
+h1.page-title-indent {font-style: normal; padding-top: 50px;}
+h2.content {font-size: 24px; font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";}
+h2.finance {padding-top: 20px;}
+
+.contentonly {}
+.contentpara {}
+
+ol.olcontent{list-style: 1}
+
+ul.ulcontent{list-style: circle;
+padding-left: 40px;
+padding-bottom: 20px;}
+
+

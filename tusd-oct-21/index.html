@@ -1,0 +1,708 @@
+<cfif isdefined ("url.gclid")>
+	<cfset url.gclid = '#url.gclid#'>
+<cfelse>
+	<cfset url.gclid = '0'>
+</cfif>
+
+
+<cfif isdefined ("url.lp")>
+	<cfif not isnumeric("#url.lp#")> 
+		
+		<cfif url.lp EQ ''>
+			<cfset url.lp = 'PALL'>
+		</cfif>
+	
+		<cfquery name="getit" datasource="#ds#" maxrows="1">
+			SELECT page_id
+			FROM land_a_key
+			WHERE lapa_term = '#url.lp#'
+		</cfquery>
+		
+		<cfif getit.recordcount EQ 0>
+			<cflocation url="index.cfm?gclid=#url.gclid#" addtoken="No">
+		</cfif>
+
+	<cfelse>
+		<cflocation url="index.cfm?gclid=#url.gclid#" addtoken="No">
+	</cfif>
+	
+		<cfif getit.page_id EQ ''>
+			<cfset getit.page_id = '35'>
+		</cfif>
+
+	
+	<cflocation URL="landing-lp.cfm?lp=#url.lp#&pa=#getit.page_id#&gclid=#url.gclid#" addtoken="No">	
+	<cfabort />	
+</cfif>
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>26 - Choose The Used Racking Company - Storage Solutions, for when price really counts</title>
+  <meta name="description" content="The Used Racking Company supplies new and used racking and pallet racking storage solutions">
+  <meta name="Keywords" content="Pallet Racking, Warehouse pallet racking, Shelving, industrial racking office racking, office racking, general purpose racking, mezzanine floors">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Muli:400,600,700|Raleway:300,400,600,700,900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />  
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="apple-touch-icon" type="image/png" href="images/favicon.png" sizes="64x64">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" >
+  <link rel="stylesheet" href="css/superfish.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style-home-26aug2018.css">
+  <link rel="stylesheet" href="css/style-oct21.css">
+
+ 
+  <link rel="stylesheet" href="css/home-page2-and-tf.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <script src="js/modernizr-3.6.0.min.js"></script>
+
+  
+<cfinclude template="google-analytics.cfm">
+		
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <div class="main-box">
+      <!-- HEADER -->
+      <header class="site-header">
+
+	     <div class="header-notice" ><a href="https://www.theusedracking.co.uk/racking-project-management-4.cfm"><strong>Click Here To View Our Installation Process</strong></a></div>
+
+        <!-- Header top -->
+        <div class="container">
+          <div class="header-top">
+            <div class="row">
+              <!-- Logo -->
+              <h1 class="logo logo-home clearfix"><a href="/" style="display: inline-block; width: 60%; float: left; vertical-align: middle; margin-top: 2%;"><img src="images-home/logo.png" alt="The Used Racking Company logo" style="display: inline-block; min-width: 210px;  "></a> <span style="display: inline-block; width: 12%; float: right;"><img src="images-home/25yers-badge.png" alt=""  style="display: inline-block; width: 100%;  "></span></h1>
+
+              <!-- Nav-trigger -->
+              <span class="hamburger-icon hide-sm">
+                <span class="line">
+                  <span class="middle-icon"></span>
+                </span>
+              </span><!--End Nav-trigger --> 
+
+              <div class="header-top-right">
+                <div class="flex-container-header">
+                 <!-- Phone + email -->
+                  <div class="good-to-talk">                   
+                   <div class="right-info">                     
+                     <img src="images/email.png" alt=""><a href="mailto:sales@hcss.co.uk" >sales@hcss.co.uk</a>
+                   </div>
+                  </div>  
+                   
+                  <div class="email-social ">
+                    <a href="https://www.linkedin.com/company/hcssltd/" target="new"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/TheUsedRacking?lang=en" target="new"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/TheUsedRacking/" target="new"><i class="fab fa-facebook-f"></i></a>                    
+                  </div> 
+                </div>
+
+                <div class="flex-container-header">
+                  <div class="phone"><img src="images/phone.png" alt=""><a href="tel:+441753512929" ><b class="muli-font">01753 512929</b></a></div>
+                  <div class="phone"><img src="images/phone.png" alt=""><a href="tel:+441753693200" ><b class="muli-font">01753 693200</b></a></div>
+                </div>
+              </div>          
+            </div>
+          </div>
+        </div><!--End Header top -->
+
+
+        
+        <!-- Header Nav -->
+        <nav class="container">
+          <div class="site-nav">
+            <div class="row">
+              <!-- Main Menu -->
+              <ul class="main-menu clearfix sf-menu-sm toggle-menu">
+                <li><a href="/">home</a></li>
+                <li><a href="##">About us</a>
+                  <ul>                
+                    <li><a href="about-the-used-racking-3.cfm">All About Us</a></li>
+                    <li><a href="testimonials.cfm">Testimonials</a></li>
+                    <li><a href="FAQ.cfm">FAQ</a></li>                    
+                  </ul>
+                </li>
+                <li><a href="##">products</a>
+                  <ul>
+                    <li><a href="warehouse-pallet-racking-35.cfm">Pallet Racking</a></li>
+                    <li><a href="general-purpose-racking-34.cfm">Racking</a></li>
+                    <li><a href="industrial-office-shelving-33.cfm">Shelving</a></li>
+                    <li><a href="mezzanine-floors-39.cfm">Mezzanine Floors</a></li>
+                    <li><a href="racking-accessories-38.cfm">Covid&#45;19 Protection</a></li>
+                    <li><a href="clearance-racking-37.cfm">Online Offers</a></li>
+                    <li><a href="catalogue.cfm?catalogue=yes">catalogue</a></li>
+                  </ul>
+                </li>
+                <li><a href="##">Services</a>
+                  <ul>                
+                    <li><a href="we-buy-racking-6.cfm">We Buy Racking</a></li>
+                    <li><a href="quotes-and-site-visits-40.cfm">Site Visits</a></li>
+                    <li><a href="racking-project-management-4.cfm">Installations</a></li>
+					          <li><a href="finance.cfm">Finance</a></li>  
+                  </ul>
+                </li>
+                <li><a href="contact-us-7.cfm?quickquote=yes">quick quotes</a></li>
+                <li><a href="contact-us-7.cfm">contact us </a></li>
+              </ul><!--End Main Menu -->
+
+              <!-- Search Form-->
+              <form class=" clearfix" action="search-results.cfm" id="search-form" method="post" onSubmit="">
+                                     
+                  <cfoutput>
+                    <cfset thisno = #randrange(1000000,9999999)#>
+                    <cfset session.mysearch = "#thisno#">                   
+                    <input type="hidden" name="wherefrom" value="#session.mysearch#" />
+                  </cfoutput> 
+                  
+                  <input name="txtSearch" id="txtSearch" type="text" class="searchkeyword" maxlength="60" placeholder="search"/>
+                  <button type="submit" name="search" id="search-btn"><i class="fa fa-search"></i></button>
+              </form><!--End Search Form-->             
+            </div>
+          </div>
+        </nav><!--End Header Nav --> 
+
+        <div class="header-bottom">
+          <ul class="header-bottom-menu">
+            <li><a href="">Warehouse</a></li>
+            <li><a href="">Stock/ Store Room</a></li>
+            <li><a href="">Automotive</a></li>
+            <li><a href="">Container</a></li>
+            <li><a href="">Outdoor/ Cold-room</a></li>
+            <li><a href="">Office</a></li>
+            <li><a href="">Quick Deals</a></li>
+          </ul>
+        </div>
+    </header>
+
+
+        <section class="section-hero text-center padding-lr">
+          <div class="grid-wrap">
+            <div class="racking-box grey-bg img-border double-span slidera">
+              <a href="https://www.theusedracking.co.uk/general-purpose-racking-34.cfm?page_id=34">
+                <!-- Slider -->
+                <div class="cycle-slideshow" data-cycle-caption="#alt-caption" data-cycle-caption-template="{{alt}}" data-cycle-swipe="true">
+                        
+                  <img src="images-home/MULTI-PURPOSE-RACKING-2.jpg" alt="Multi Purpose racking" />
+                  <img src="images-home/Homepage-spotlight-retail-racking.jpg" alt="Retail Racking" />
+                  <img src="images-home/Homepage-spotlight-ecom-racking.jpg" alt="Ecommerce Racking" />
+                  
+                  <h4 id="alt-caption" ></h4>
+                </div><!--End Slider -->
+              </a>
+            </div>
+			  
+            <div class="racking-box grey-bg img-border">
+              <a href="https://www.theusedracking.co.uk/racking-1256.cfm?page_id=35">
+                <img src="images-home/new-pallet-racking-r.png" alt="New pallet racking">
+                <h4>New Pallet Racking</h4>
+              </a>
+            </div>
+			
+			<div class="racking-box grey-bg img-border">
+              <a href="https://www.theusedracking.co.uk/warehouse-pallet-racking-35.cfm?page_id=35">
+                <img src="images-home/used-pallet-racking.png" alt="Used pallet racking">
+                <h4>Used Pallet Racking</h4>
+              </a>
+			  </div>
+			  
+            <div class="racking-box grey-bg img-border">
+              <a href="https://www.theusedracking.co.uk/industrial-office-shelving-33.cfm?page_id=33">
+                <img src="images-home/shelving-r.png" alt="shelving">
+                <h4>Shelving</h4>
+              </a>
+            </div>
+			  
+			     <div class="racking-box grey-bg img-border">
+              <a href="https://www.theusedracking.co.uk/racking-accessories-38.cfm?page_id=38">
+                <img src="images-home/workplace-products.png" alt="workplace products">
+                <h4>Workplace Products</h4>
+              </a>
+            </div>
+			  			  
+            <div class="racking-box grey-bg img-border">
+              <a href="https://www.theusedracking.co.uk/racking-1263.cfm?page_id=34#RA-CAN">
+                <img src="images-home/cantilever-racking-r.png" alt="cantilever racking">
+                <h4>Cantilever Racking</h4>
+              </a>
+            </div>
+			  
+            <div class="racking-box grey-bg img-border">
+              <a href="https://www.theusedracking.co.uk/mezzanine-floors-39.cfm">
+                <img src="images-home/MezzanineFloors-img.png" alt="mezzanine floors">
+                <h4>Mezzanine Floors</h4>
+              </a>
+            </div>
+  			  			  
+			     <div class="racking-box grey-bg img-border">
+                <a href="https://www.theusedracking.co.uk/offersonly-warehouse-pallet-racking-35.cfm" >
+                  <img src="images-home/Pallet-Racking-dealsV2.jpg" alt="Pallet Racking Deals">
+					       <h4><strong>Pallet Racking Offers</strong></h4>
+                </a>
+            </div>
+
+            <div class="racking-box grey-bg img-border">
+                <a href="https://www.theusedracking.co.uk/offersonly-general-purpose-racking-34.cfm?page_id=34" >
+                  <img src="images-home/racking-offersV2.jpg" alt="Racking Offers">
+					       <h4><strong>Racking Offers</strong></h4>
+                </a>
+            </div>
+          </div>
+        </section>
+       
+      </header><!--END HEADER -->
+			
+
+      <!-- 4 Reasons   -->
+      <section class="grey-bg section-padding" >
+        <div class="container">
+          <h2 class="ttu-red text-center">4 Reasons Why You SHould Choose Us</h2>
+
+          <ul class="hero-icons reason-icons clearfix">
+            <li  class="clearfix">
+              <img src="images-home/instock.png" alt="Held in stock">
+              <h4>In Stock</h4>
+            </li>
+            <li  class="clearfix">
+              <img src="images-home/quickquotes.png" alt="Quick quotes">
+              <h4>Quick Quotes</h4>
+            </li>           
+            <li  class="clearfix">
+              <img src="images-home/fastdelivery.png" alt="Quick delivery">
+              <h4>Fast Delivery</h4>
+            </li> 
+             <li  class="clearfix">
+              <img src="images-home/weinstall.png" alt="Racking installation">
+              <h4>We Install</h4>
+            </li>
+          </ul>
+        </div>  
+      </section><!--END 4 Reasons  -->
+
+
+     <section class="section-rackings text-center">
+        <div class="grid-wrap">
+          <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1397.cfm?page_id=34#RA-WH">
+              <img src="images-home/warehouse.png" alt="Warehouse">
+              <h4>Warehouse</h4>
+            </a>
+          </div>
+			
+		      <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1455.cfm?page_id=34#RA-BYER">
+              <img src="images-home/5metre-wide-racking-black-yellow.png" alt="E-COMMERCE RACKING">
+              <h4>E-COMMERCE RACKING</h4>
+            </a>
+          </div>			           
+			
+          <div class="racking-box grey-bg img-border">
+			         <a href="https://www.theusedracking.co.uk/racking-1454.cfm?page_id=34#RA-RBER">
+              <img src="images-home/5metre-wide-racking-black-red.png" alt="RETAIL RACKING">
+              <h4>RETAIL RACKING</h4>
+            </a>
+          </div>
+
+          <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1398.cfm?page_id=34#RA-SR">
+              <img src="images-home/Stockroom-Racking.png" alt="stockroom racking">
+              <h4>stockroom</h4>
+            </a>
+          </div>
+
+	        <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1433.cfm?page_id=34#RA-WSR">
+              <img src="images-home/wholesale.png" alt="wholesale">
+              <h4>wholesale</h4>
+            </a>
+          </div>
+
+          <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1419.cfm?page_id=34#HLR-CON">
+              <img src="images-home/containers.png" alt="Containers">
+              <h4>Containers</h4>
+            </a>
+          </div>
+
+			    <div class="racking-box grey-bg img-border">
+			       <a href="https://www.theusedracking.co.uk/racking-1252.cfm?page_id=34#RA-HDR">
+              <img src="images-home/warehouse.png" alt="Heavy Duty">
+              <h4>Heavy Duty</h4>
+            </a>
+          </div>
+
+		      <div class="racking-box grey-bg img-border">
+			        <a href="https://www.theusedracking.co.uk/racking-1435.cfm?page_id=34#RA-DDR-1200">
+              <img src="images-home/Longspan-Template-1200D.png" alt="Double Deep">
+              <h4>Double Deep</h4>
+            </a>
+          </div>
+
+		      <div class="racking-box grey-bg img-border">
+		          <a href="https://www.theusedracking.co.uk/racking-1261.cfm?page_id=34#RA-STL">
+              <img src="images-home/Steel-Racking-1.png" alt="Steel Racking">
+              <h4>Steel Racking</h4>
+            </a>
+          </div>
+		
+		      <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1394.cfm?page_id=34#RA-WBR">
+              <img src="images-home/workbench.png" alt="workbench">
+              <h4>workbench</h4>
+            </a>
+          </div>
+
+		      <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1458.cfm?page_id=34#WP-RBWB">
+              <img src="images-home/workbench-r-b.png" alt="workbench">
+              <h4>Red Workbench</h4>
+            </a>
+          </div>
+
+		      <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1459.cfm?page_id=34#WP-YBWB">
+              <img src="images-home/workbench-y-b.png" alt="workbench">
+              <h4>Yellow Workbench</h4>
+            </a>
+          </div> 
+
+          <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1265.cfm?page_id=34#RA-TRE">
+              <img src="images-home/tyre.png" alt="tyre">
+              <h4>tyre</h4>
+            </a>
+          </div>
+
+			    <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1441.cfm?page_id=34#RA-MPDCSB">
+              <img src="images-home/compartment.png" alt="compartment">
+              <h4>compartment racking</h4>
+            </a>
+			    </div>
+
+			    <div class="racking-box grey-bg img-border">
+            <a href="https://www.theusedracking.co.uk/racking-1437.cfm?page_id=34#RA-MHLR">
+              <img src="images-home/mobile-racking.png" alt="mobile racking">
+              <h4>mobile racking</h4>
+            </a>
+          </div>
+
+		      <div class="racking-box grey-bg img-border">
+			        <a href="https://www.theusedracking.co.uk/racking-1399.cfm?page_id=34#RA-OR">
+              <img src="images-home/OfficeArchives.png" alt="Office/ Archives ">
+              <h4>Office/ Archives </h4>
+            </a>
+          </div> 
+        </div>		 
+		</section>
+		  
+		  
+
+		  
+     
+      <!-- About   -->
+      <section class="section-padding text-center padding-lr">
+        <div class="container">
+          <div class="narrow-wrap">
+            
+            <h2 class="ttu-red heading-bb">About The Used Racking Company</h2>
+
+            <p>Since our formation in 1995, we have more than 25 years proven expertise in both new and used racking, our team have a wealth of practical experience and technical knowledge to share with you. Every day we help existing and new customers find the best racking solutions to suit their storage needs backed up by first class after sales service. Feel free to call in and visit us to view our extensive range of products or alternatively call or email us for some honest advice about your storage equipment needs.</p>
+          </div>
+        </div>  
+      </section><!--END About  -->
+
+
+
+			<!-- Section Services -->
+      <section class="services grey-bg section-padding text-center padding-lr">
+        <h2 class="ttu-red heading-bb">services</h2> 
+        
+        <div class="flex-container clearfix">     
+          <div class="three-columns">
+            <div class="product white-bg1">
+               <div class="overlay1"> 
+                <div class="vam1">          
+                  <a href="quotes-and-site-visits-40.cfm"><img src="images-home/pallet.png" alt="Site visits" ><h3 class="ttu-red hide-xs">site visits</h3></a>                  
+                </div> 
+                <div class="link-overlay1">
+                  <a href="quotes-and-site-visits-40.cfm" ><h3 class="ttu-red caption-text">site visits</h3> Call the team for a no obligation site visit.</a>
+                </div>  
+              </div>
+            </div>
+          </div> 
+
+          <div class="three-columns">
+            <div class="product white-bg1">
+               <div class="overlay1"> 
+                <div class="vam1">          
+                  <a href="we-buy-racking-6.cfm"><img src="images-home/server.png" alt="Site visits" ><h3 class="ttu-red hide-xs">we buy racking</h3></a>                  
+                </div> 
+                <div class="link-overlay1">
+                  <a href="we-buy-racking-6.cfm" ><h3 class="ttu-red caption-text">we buy racking</h3> Turn your used racking into cash.</a>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="three-columns ">
+            <div class="product white-bg1">    
+              <div class="overlay1">              
+                <div class="vam1">
+                  <a href="racking-project-management-4.cfm"><img src="images-home/ForkTruck.png" alt="Racking project management" ><h3 class="ttu-red hide-xs">installations</h3></a>                  
+                </div>
+                <div class="link-overlay1 ">                 
+                 <a href="racking-project-management-4.cfm" > <h3 class="ttu-red caption-text">installations</h3> We provide an oustanding design, supply and installation service for a couple of bays in the office to a complete warehouse fit-out.</a>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--End Section Services -->
+      
+
+
+       <!--SECTION TESTIMONIALS -->
+      <section class="container padding-lr">
+        <div class="section-testimonials-1 section-padding  text-center">
+          <h2 class="ttu-red heading-bb">What Our Clients Say...</h2>     
+          <div class="row">
+            <div class="owl-carousel owl-theme ">
+              <!-- TESTIMONIALS 1 -->
+              <div class="carousel-items flex-container">
+                <div class="half-width has-image ">
+                  <img src="images-home/testimonials-img-1.jpg" alt="testimonials img" >
+                </div>
+
+                <div class="half-width has-bg-quote-icons ">
+                  <div class="vam">
+                    <div class="vbox">
+                      <p class="rating-box-n">
+                       All happy here! Goods arrived as ordered via helpful courier!<br>
+                        <b>Ruth, Ecoism Manufacturing Ltd</b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--End TESTIMONIALS 1 -->
+
+              <!-- TESTIMONIALS 2 -->
+              <div class="carousel-items flex-container">
+                <div class="half-width has-image ">
+                  <img src="images-home/testimonials-img-2.jpg" alt="testimonials img" >
+                </div>
+
+                <div class="half-width has-bg-quote-icons">
+                  <div class="vam">
+                    <div class="vbox">
+                      <p class="rating-box-n">
+                        We found your company to be helpful, professional and very knowledgeable. <br>
+
+                        <b>Sean Bourke, Surrey Pallets </b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--End TESTIMONIALS 2 -->
+
+              <!-- TESTIMONIALS 3 -->
+              <div class="carousel-items flex-container">
+                <div class="half-width has-image ">
+                  <img src="images-home/testimonials-img-3.jpg" alt="testimonials img" >
+                </div>
+
+                <div class="half-width has-bg-quote-icons">
+                  <div class="vam">
+                    <div class="vbox">
+                      <p class="rating-box-n">
+                        We are happy the racking is here and is due to be installed soon. <br>
+
+                        <b>Andrew Newman, Argos Limited </b>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div><!--End TESTIMONIALS 3 -->            
+             
+            </div>
+          </div>
+        </div>
+      </section><!--END SECTION TESTIMONIALS -->
+
+
+<a name="contact"></a>
+<cfif isdefined("session.user_name")>
+	<cfif session.user_name EQ "">
+		<cfset lv_user_name = ''>
+	<cfelse>
+		<cfset lv_user_name = '#session.user_name#'>
+	</cfif>
+<cfelse>
+   <cfset lv_user_name = '-'>
+</cfif>   
+
+<cfif isdefined("session.user_email")>
+	<cfif session.user_tel EQ "">
+		<cfset lv_user_email = ''>
+	<cfelse>
+		<cfset lv_user_email = '#session.user_email#'>
+	</cfif>
+<cfelse>
+   <cfset lv_user_email = '-'>
+</cfif>      
+            
+<cfif isdefined("session.user_tel")>
+	<cfif session.user_tel EQ "">
+		<cfset lv_user_tel = ''>
+	<cfelse>
+		<cfset lv_user_tel = '#session.user_tel#'>
+	</cfif>
+<cfelse>
+   <cfset lv_user_tel = '-'>
+</cfif>        
+     
+     
+ 
+     
+      <!-- Section Sign Up -->
+      <section class="Sign-Up grey-bg section-padding ">
+        <cfif isdefined ("url.action")>
+        <h2 class="ttu-red heading-bb text-center">Thank you for Signing Up</h2> 
+        <div><p align="center">Our team will keep you up to date with our fantastic special offers.</p></div>   
+        <cfelse>
+        <h2 class="ttu-red heading-bb text-center">Special Offers Sign Up</h2> 
+        
+        <div class="container">
+           <form action="signup-action.cfm" method="post">
+				<input type="hidden" name="thisname" value="index.cfm">
+				<input type="hidden" name="contactfrom" value="Sign-up">
+				<input type="hidden" name="company" value="-">
+				<input type="hidden" name="enquiry" value="-">
+				<input type="hidden" name="signupemail" value="yes">
+
+            <ul class="clearfix">     
+              <li>
+                 <cfoutput><input type="text" name="user_name" placeholder="Name*" value="#lv_user_name#" required tabindex="1"></cfoutput>
+              </li>
+
+              <li>
+                 <cfoutput><input type="email" placeholder="Email*" name="user_email" value="#lv_user_email#" required tabindex="2"></cfoutput>
+              </li>
+
+              <li>
+                <cfoutput><input type="text" placeholder="Phone*" name="user_tel" value="#lv_user_tel#" required tabindex="3"></cfoutput>
+              </li>
+              <cfoutput>
+					<cfset whatno = #randrange(1000000,9999999)#>
+					<cfset session.captchno = #whatno#>
+				</cfoutput>	
+              
+				<li style="padding-top: 10px; text-align: right"><cfoutput>#whatno#</cfoutput></li>
+				<li><input type="text" name="validuserno" autocomplete="off" placeholder="Enter the Number" tabindex="4"></li>
+            
+
+						<li> <div class="signup-submit clearfix"><button type="submit" tabindex="5">Submit</button></div></li>
+            </ul>
+          </form>
+        </div>
+		</cfif>
+      </section><!--End Section Sign Up -->
+
+
+
+      <footer class="container">
+        <div class="site-footer">
+          <!-- Footer Widget -->
+          <div class="footer-top ">
+              <div class="container">
+                <div class="flex-container">
+                  <ul class="footer-menu">
+                    <li><a href="/">home</a></li>
+                    <li><a href="about-the-used-racking-3.cfm">about us</a></li>
+                    <li><a href="testimonials.cfm">Testimonials</a></li>
+                    <li><a href="we-buy-racking-6.cfm">we buy racking</a></li>
+                    <li><a href="contact-us-7.cfm?quickquote=yes">Quick Quotes</a></li>
+                    <li><a href="contact-us-7.cfm">contact us </a></li>
+                  </ul>
+
+                  <div class="products-links">
+                    <h4>products</h4>
+                    <ul class="products">
+                      <li><a href="warehouse-pallet-racking-35.cfm">Pallet Racking</a></li>
+                      <li><a href="general-purpose-racking-34.cfm">Racking</a></li>
+                      <li><a href="industrial-office-shelving-33.cfm">Shelving</a></li>
+                      <li><a href="mezzanine-floors-39.cfm">Mezzanine Floors</a></li>
+                      <li><a href="racking-accessories-38.cfm">Covid&#45;19 Protection</a></li>
+                      <li><a href="catalogue.cfm?catalogue=yes">catalogue</a></li>
+                      <li><a href="clearance-racking-37.cfm">Online Offers</a></li>
+                   </ul>      
+                  </div>
+
+                  <div class="footer-text">
+                    <p>Since our formation in 1995 we have years of proven expertise in providing storage solutions consisting of new and used racking. Every day we help new and existing customers find the best racking solutions backed up by first class after sales service. Feel free to call in and visit our showroom or call out team for some honest advice about your storage equipment needs.</p>    
+                  </div>
+
+                  <!-- Social Icon Desktop -->
+                  <ul class="social-links-footer">                          
+                    <li><a href="https://www.facebook.com/TheUsedRacking/"><i class="fab fa-facebook-f"></i></a></li>            
+                    <li><a href="https://twitter.com/TheUsedRacking?lang=en"><i class="fab fa-twitter"></i></a></li>  
+                    <li><a href="https://www.linkedin.com/company/hcssltd/"><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul><!--End Social Icon Desktop -->
+              </div>
+            </div>
+          </div><!--End Footer Widget -->
+
+          <div class="footer-bottom text-center">
+            <div class="container">
+              <p><a href="terms-and-conditions-13.cfm">Terms and conditions</a> | <a href="data-privacy-policy.cfm">Data Privacy</a></p>
+
+              <!-- Social Icon Mobile -->
+              <ul class="social-links-footer hide-sm">                          
+                <li><a href="https://www.facebook.com/TheUsedRacking/"><i class="fab fa-facebook-f"></i></a></li>            
+                <li><a href="https://twitter.com/TheUsedRacking?lang=en"><i class="fab fa-twitter"></i></a></li>  
+                <li><a href="https://www.linkedin.com/company/hcssltd/"><i class="fab fa-linkedin-in"></i></a></li>
+              </ul><!--End Social Icon Mobile -->
+            </div>
+          </div>
+        </div>
+      </footer><!-- END FOOTER -->     
+    </div>
+      <!-- JQUERY -->
+      <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+      <!-- SCROLLUP -->
+      <script src="js/jquery.scrollUp.min.js"></script>
+
+      <!-- SUPERFISH -->
+      <script src="js/superfish.js"></script>
+
+      <!-- OWL CAROUSEL -->
+      <script src="js/owl.carousel.js"></script>
+
+      <script src="js/jquery.cycle2.min.js"></script>
+      <script src="js/jquery.cycle2.swipe.min.js"></script>
+
+      <!-- Main JS -->
+      <script src="js/main.js"></script>  
+</body>
+</html>
