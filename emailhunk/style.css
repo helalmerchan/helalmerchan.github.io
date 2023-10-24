@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Ovo&family=Roboto&display=swap');
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css');
+
+
+:root {
+    --white: #ffffff;
+    --grey-bg: #f7f7f7;
+    --green-bg: #4ea951;
+    --orange-cta: #f9593a;
+    --green-cta: var(--green-bg);
+}
+
+body{
+    color: #8d908c;
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Ovo', serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+.section-padding{
+    padding: 5rem;
+}
+
+
+
+.list-unstyles{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.green-bg{
+    background-color: var(--green-bg);
+    color: var(--white);
+}
+
+.green-bg a{
+    color: var(--white);
+    text-decoration: none;
+}
+.grey-bg{
+    background-color: var(--grey-bg);
+}
+.navbar-brand{
+    display: inline-block;
+    width: 223px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+
+.parallelogram{
+    border-radius: 0;
+	transform: skew(-20deg);
+    background: var(--orange-cta);
+}
+
+@media (min-width: 1200px) {
+    body{
+        font-style: 1.13rem;
+    }
+    
+}
