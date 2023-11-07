@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Ovo&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
@@ -18,7 +18,7 @@ body{
 }
 
 .section-padding{
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 
 .btn-danger{
@@ -26,6 +26,11 @@ body{
 }
 .btn-danger:hover{
     background: #d94c30;
+}
+.btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle {
+    color: #fff;
+    background-color: #f9593a;
+    border-color: #f9593a;
 }
 
 .btn-success{
@@ -59,7 +64,7 @@ body{
 
 /* header */
 .header-top{
-    padding: 1rem;
+    padding: .7rem;
     font-size: 0.9rem;
     font-family: 'Roboto', sans-serif; 
 }
@@ -87,69 +92,67 @@ img{
     max-width: 100%;
 }
 
-.social-icons a{
-    margin: 0 0.6rem;
-    color: #4ea951;
-}
-
-li.has-btn{
-    position: relative;
-    width: 200px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-
 .parallelogram{
     color: #ffffff;
-    text-transform: capitalize;
-    border-radius: 0;
-	transform: skew(-18deg);
     background: #f9593a;
-    position: absolute;
-    top: -13px;
-    width: 100%;
-    text-wrap: nowrap;
-    line-height: 65px;
-    padding: 0;
+    text-transform: capitalize;
+    border-radius: 30px;
     text-align: center;
-}
+    text-decoration: none;
+    display: block;
+    width: 190px;
+    height: 44px;
+    line-height: 44px;
+    margin: auto;
 
+}
 
 .parallelogram:hover{
     color: #ffffff;
     background: #d94c30;
+    text-decoration: none;
 }
-.skew-fix{
-    display:inline-block;
-    transform: skew(18deg);
+
+
+
+.social-icons a{
+    color: #4ea951;
+    margin: 0 0.3rem;
 }
+
+
 
 /* Banner */
 .section-hero{
-    padding-top: 6rem;
+    padding-top: 3rem;
 }
 .slide-info{
     max-width: 600px;
     margin: auto;
 }
-
-.slide-info .btn{
-    width: 227px;
-    height: 63px;
-    vertical-align: middle;
-    font-size: 1.12rem;
-    padding: 0;
-    line-height: 63px;
-    text-transform: capitalize;
+.button-group{    
     margin-top: 2.6rem;
     margin-bottom: 3rem;
 }
+
+.slide-info .btn{
+    width: 185px;
+    height: 46px;
+    vertical-align: middle;
+    padding: 0;
+    line-height: 46px;
+    text-transform: capitalize;
+}
+.slide-info .btn:first-child{
+    margin-right: .75rem;
+}
+
 .section-hero h1{
-    font-weight: 900;
+    font-weight: 700;
     color: black;
     margin: 1.3rem 0;
 }
+
 .section-hero h5{
     color: #4ea951;
     text-transform: uppercase;
@@ -166,15 +169,14 @@ li.has-btn{
 .form-control{
     color: #ffffff;
     font-weight: 300;
-    font-family: 'Ovo', serif;
+    font-family: 'Lato', sans-serif;
     background: transparent;
     height: 56px;
 }
 
 .form-control:focus{
     outline: none;
-    color: #ffffff;
-    font-family: 'Lato', sans-serif;
+    color: #ffffff;    
     background: transparent;
 }
 
@@ -203,7 +205,7 @@ li.has-btn{
     position: absolute;
     right: 0;    
     bottom: 0;
-    width: 18%;
+    width: 96px;
 }
 .form-control::placeholder{
 	color: #fff;
@@ -216,8 +218,8 @@ li.has-btn{
 
 .grid-gallery{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
 .nav-pills{
@@ -309,6 +311,15 @@ li.has-btn{
     color: #49a24f;
     font-weight: 900;
 }
+.work-directly .container{
+    position: relative;
+}
+img.alpha{
+    opacity: 0.6;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
 
 /* platform-logos */
 .platform-logos {
@@ -349,13 +360,79 @@ li.has-btn{
     margin: 0;
 }
 
+@media (max-width: 767px) {
+    .hide-xs{
+        display: none;
+    }
+
+    .section-hero h5{
+        font-size: .95rem;
+        margin-top: 1.2rem;
+        text-transform: uppercase;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px){
+    .navbar-expand-md .navbar-nav {
+        flex-wrap: wrap;
+    }
+
+   
+}
+
 @media (min-width: 768px) {
+    .header-top{
+        padding: 1rem;
+    }
+
+    .social-icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .has-btn{
+        position: relative;
+        top: -33px;
+        width: 180px;
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        height: fit-content;
+    }    
+    
+    .parallelogram{        
+        text-transform: capitalize;
+        border-radius: 0;
+        transform: skew(-18deg);        
+        position: absolute;
+        top: 0;
+        width: 100%;        
+        height: fit-content;        
+        line-height: 65px;
+        padding: 0;        
+    } 
+   
+    
+    .skew-fix{
+        display:inline-block;
+        transform: skew(18deg);
+    } 
+
     .platform-logos {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (min-width: 992px) {
+    .section-hero{
+        padding-top: 6rem;
+    }
+    .section-padding{
+        padding: 5rem 0;
+    }
+    .grid-gallery,
     .platform-logos {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -369,6 +446,30 @@ li.has-btn{
 
     .navbar-brand{
         width: 223px;
+    }
+
+    .has-btn{
+        width: 200px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }    
+    
+
+    .parallelogram{    
+        line-height: 65px;
+        text-wrap: nowrap;
+    } 
+
+    .slide-info .btn{
+        width: 227px;
+        height: 63px;
+        font-size: 1.12rem;
+        line-height: 63px;
+    }
+    
+    .section-hero h1{
+        font-weight: 900;
+        margin: 1.3rem 0;
     }
 
     .section-hero h1{
