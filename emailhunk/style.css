@@ -164,7 +164,7 @@ img{
 
 
 .order-form h3{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .form-control{
     color: #ffffff;
@@ -180,11 +180,13 @@ img{
     background: transparent;
 }
 
-
 .btnlg{
-    width: 323px;
-    height: 66px;
+    width: 220px;
+    height: 50px;
+    line-height: 55px;
+    padding: 0;
 }
+
 
 .btnlg.btn-success{    
     text-transform: uppercase;
@@ -268,24 +270,23 @@ img{
 
 .check-features li{
     margin-bottom: .70rem;
-    font-size: 1.375rem;
 }
 
 .check-btns{
     margin: 2rem 0;
 }
 
-.check-btns a{    
-    font-size: 1.375rem;
-}
 
 .check-btns .btn{
+    display: inline-block;
     color: #797979;
     border: 1px solid #626262;
     width: 200px;
     height: 50px;
+    line-height: 50px;
     border-radius: 11px;
-    margin-right: 10%;
+    margin-right: 1rem;
+    padding: 0;
 }
 
 .check-btns .btn:hover{
@@ -311,7 +312,7 @@ img{
     color: #49a24f;
     font-weight: 900;
 }
-.work-directly .container{
+.work-directly .container-narrow{
     position: relative;
 }
 img.alpha{
@@ -319,6 +320,7 @@ img.alpha{
     position: absolute;
     right: 0;
     bottom: 0;
+    width: 100px;
 }
 
 /* platform-logos */
@@ -360,7 +362,111 @@ img.alpha{
     margin: 0;
 }
 
+.card-header .btn{
+    position: relative;
+}
+
+.btn-link:hover,
+.btn-link:visited,
+.btn-link{
+    text-decoration: none;
+    color: #797979;
+}
+.card-header .btn.collapsed:after,
+.card-header .btn:not(.collapsed):after{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+}
+.card-header .btn.collapsed:after{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 2px;
+    background-color: #797979;    
+    font-size: 2rem;    
+}
+.card-header .btn:not(.collapsed):after{
+    content: "+";   
+    font-size: 2rem;
+    right: 0.9rem;
+}
+
+.easier h2,
+.easier h5{
+    color: #000;
+}
+.easier h5{
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+.easier ol{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+    margin-top: 2rem;
+}
+
+.easier li{
+
+    counter-increment: number;
+    position: relative;
+    height: 100%;
+}
+
+.easier li:before{
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    content: counter(number);
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background: #42994c;
+    color: #ffffff;    
+    text-align: center;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+}
+
+.easier .box{
+    font-size: 1rem;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px; /* border radius */
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #fff; /* layer fill content */
+    -moz-box-shadow: 0 0 10px rgba(66,153,76,.75); /* drop shadow */
+    -webkit-box-shadow: 0 0 10px rgba(66,153,76,.75); /* drop shadow */
+    box-shadow: 0 0 10px rgba(66,153,76,.75); /* drop shadow */
+    padding: 30px 15px 15px;    
+    height: 100%;
+}
+
+
+.easier .box img{
+    width: 85px;
+    height: auto;
+    margin: auto;
+}
+
+.text-green {
+    color: #033905;
+}
+
 @media (max-width: 767px) {
+
+    .no-margin{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .hide-xs{
         display: none;
     }
@@ -369,6 +475,10 @@ img.alpha{
         font-size: .95rem;
         margin-top: 1.2rem;
         text-transform: uppercase;
+    }
+
+    .nav-pills .nav-link {
+        font-size: small;
     }
 }
 
@@ -379,6 +489,9 @@ img.alpha{
         flex-wrap: wrap;
     }
 
+    .check-btns a{    
+        font-size: 1.375rem;
+    }
    
 }
 
@@ -432,13 +545,26 @@ img.alpha{
     .section-padding{
         padding: 5rem 0;
     }
+    .easier ol,
     .grid-gallery,
     .platform-logos {
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .order-form h3{
+        font-size: 3rem;
+    }
+
+    .check-features li{
+        font-size: 1.375rem;
+    }
 }
 
 @media (min-width: 1200px) {
+    .container-narrow{
+        max-width: 920px;
+        margin: auto;
+    }
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 1rem;
         padding-left: 1rem;
@@ -453,7 +579,9 @@ img.alpha{
         margin-left: 1rem;
         margin-right: 1rem;
     }    
-    
+    .had-mb{
+        margin-bottom: 3rem;
+    }
 
     .parallelogram{    
         line-height: 65px;
@@ -465,6 +593,11 @@ img.alpha{
         height: 63px;
         font-size: 1.12rem;
         line-height: 63px;
+    }
+    .btnlg{
+        width: 300px;
+        height: 60px;
+        line-height: 58px;
     }
     
     .section-hero h1{
