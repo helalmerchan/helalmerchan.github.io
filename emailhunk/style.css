@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
 
@@ -14,7 +14,6 @@
 body{
     color: #8d908c;
     font-family: 'Lato', sans-serif;
-    /*font-family: 'Roboto', sans-serif; */
 }
 
 .section-padding{
@@ -31,6 +30,10 @@ body{
     color: #fff;
     background-color: #f9593a;
     border-color: #f9593a;
+}
+
+.container-narrow{
+    padding: 0 15px;
 }
 
 .btn-success{
@@ -368,9 +371,15 @@ img.alpha{
 
 .btn-link:hover,
 .btn-link:visited,
+.btn-link:focus,
 .btn-link{
     text-decoration: none;
     color: #797979;
+    outline: none;
+    border: none;
+}
+.btn:focus{
+    box-shadow: none;
 }
 .card-header .btn.collapsed:after,
 .card-header .btn:not(.collapsed):after{
@@ -439,13 +448,8 @@ img.alpha{
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px; /* border radius */
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box; /* prevents bg color from leaking outside the border */
     background-color: #fff; /* layer fill content */
-    -moz-box-shadow: 0 0 10px rgba(66,153,76,.75); /* drop shadow */
-    -webkit-box-shadow: 0 0 10px rgba(66,153,76,.75); /* drop shadow */
-    box-shadow: 0 0 10px rgba(66,153,76,.75); /* drop shadow */
+    box-shadow: 0 0 7px rgba(66,153,76,.7); /* drop shadow */
     padding: 30px 15px 15px;    
     height: 100%;
 }
@@ -459,6 +463,32 @@ img.alpha{
 
 .text-green {
     color: #033905;
+}
+
+.accordion{    
+    margin-top: 3rem;
+}
+
+.card{
+    border: none;
+    border-radius: 5px 5px !important;
+    background-clip: padding-box; /* prevents bg color from leaking outside the border */
+    background-color: #fff; /* layer fill content */
+    box-shadow: 1px 2px 3px rgba(0,0,0,.5); /* drop shadow */
+    margin-bottom: 1rem;
+}
+
+
+
+.card-header{
+    border-radius: 15px 15px 0 0 !important;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.card-header .btn{
+    font-size: 1.05rem;
+    font-weight: 700;
 }
 
 @media (max-width: 767px) {
