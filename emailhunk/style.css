@@ -5,14 +5,14 @@
 @import url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css');
 
 
-:root {   
-    --orange-cta: #f9593a;
-    --green-cta: #4ea951;
+i.fa{
+    vertical-align: middle;
 }
 
 body{
     color: #8d908c;
     font-family: 'Lato', sans-serif;
+    line-height: 1.7;
 }
 
 .section-padding{
@@ -203,11 +203,13 @@ img{
     position: relative;
     min-height: 216px;
 }
+
 .custom-file textarea{
     position: absolute;
     height: 100%;
     width: 100%;
 }
+
 .form-control-file{
     position: absolute;
     right: 0;    
@@ -286,11 +288,11 @@ img{
     display: inline-block;
     color: #797979;
     border: 1px solid #626262;
-    width: 200px;
+    width: 164px;
     height: 50px;
-    line-height: 50px;
-    border-radius: 11px;
-    margin-right: 1rem;
+    line-height: 46px;
+    border-radius: 50px;
+    margin-right: 1.2rem;
     padding: 0;
 }
 
@@ -338,12 +340,9 @@ img.alpha{
 }
 
 .platform-logos li{
-    padding: 2rem;
+    padding: .5rem;
     margin-bottom: 2rem;
-    -moz-box-shadow: 3px 4px 5px rgba(81,81,81,.27); /* drop shadow */
-    -webkit-box-shadow: 3px 4px 5px rgba(81,81,81,.27); /* drop shadow */
-    box-shadow: 3px 4px 5px rgba(81,81,81,.27); /* drop shadow */
-
+    box-shadow: 2px 3px 2px rgba(81,81,81,.27); /* drop shadow */
 }
 
 .large-container{
@@ -353,9 +352,60 @@ img.alpha{
 }
 
 
+.site-footer{
+    font-size: .9rem;
+}
 .site-footer .top{
     padding-top: 6rem;
     padding-bottom: 4rem;
+
+}
+.site-footer a{    
+    display: block;
+    margin-bottom: .3rem;
+}
+.site-footer a:hover{
+    color: #e3e3e3;
+}
+
+.site-footer h6{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+.social-link{
+    display: flex;
+    max-width: 150px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.subscribe{
+    position: relative;
+    width: 220px;
+}
+.subscribe label{
+    font-size: .7rem;
+    display: block;
+}
+.subscribe input{
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.subscribe i{   
+    background: #cfd2d3;
+    position: absolute;
+    right: 5px;
+    bottom: 50%;
+    width: 22px;
+    height: 22px;
+    border-radius: 50px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 22px;
 }
 
 .dark-green{
@@ -458,7 +508,7 @@ img.alpha{
 
 
 .easier .box img{
-    width: 85px;
+    width: 68px;
     height: auto;
     margin: auto;
 }
@@ -476,7 +526,7 @@ img.alpha{
     border-radius: 5px 5px !important;
     background-clip: padding-box; /* prevents bg color from leaking outside the border */
     background-color: #fff; /* layer fill content */
-    box-shadow: 1px 2px 3px rgba(0,0,0,.5); /* drop shadow */
+    box-shadow: 1px 1px 3px rgba(0,0,0,.3); /* drop shadow */
     margin-bottom: 1rem;
 }
 
@@ -518,6 +568,10 @@ img.alpha{
     position: relative;
     right: 0;
     bottom: initial;
+    height: 40px;
+}
+.excerpt .btn-Light:hover{
+    background-color: #dadada;
 }
 
 @media (max-width: 767px) {
@@ -587,11 +641,16 @@ img.alpha{
     .skew-fix{
         display:inline-block;
         transform: skew(20deg);
-    } 
+    }
+
+    .platform-logos li{
+        padding: 1rem;
+    }
 
     .platform-logos {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
 
 @media (min-width: 992px) {
@@ -614,6 +673,8 @@ img.alpha{
     .check-features li{
         font-size: 1.375rem;
     }
+
+    
 }
 
 @media (min-width: 1200px) {
@@ -626,7 +687,10 @@ img.alpha{
         padding-left: 1rem;
     }
 
-    
+    .platform-logos li{
+        padding: 2rem;
+    }
+
     .has-btn{
         width: 200px;
         margin-left: 1rem;
@@ -642,9 +706,10 @@ img.alpha{
 
    
     .btnlg{
-        width: 300px;
-        height: 60px;
-        line-height: 58px;
+        width: 240px;
+        height: 54px;
+        line-height: 50px;
+        font-size: 1.2rem;
     }
     
     .section-hero h1{
