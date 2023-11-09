@@ -11,6 +11,7 @@
 }
 
 
+
 body{
     color: #8d908c;
     font-family: 'Lato', sans-serif;
@@ -103,7 +104,7 @@ img{
     text-align: center;
     text-decoration: none;
     display: block;
-    width: 190px;
+    width: 230px;
     height: 44px;
     line-height: 44px;
     margin: auto;
@@ -490,8 +491,34 @@ img.alpha{
     font-weight: 700;
 }
 
-@media (max-width: 767px) {
+.has-border{
+    border: 1px solid #efefef;
+}
+.has-border img{
+    display: block;
+    width: 100%;
+}
 
+.excerpt{
+    padding: 1rem;
+}
+.excerpt h4{
+    color: #000;
+}
+.excerpt h4,
+.excerpt p{
+    margin-bottom: 1rem;
+}
+
+.excerpt .btn-Light{
+    width: 116px;
+    border: 1px solid #dadada;
+    position: relative;
+    right: 0;
+    bottom: initial;
+}
+
+@media (max-width: 767px) {
     .no-margin{
         margin-left: 0;
         margin-right: 0;
@@ -535,8 +562,8 @@ img.alpha{
 
     .has-btn{
         position: relative;
-        top: -33px;
-        width: 180px;
+        top: -31px;
+        width: 230px;
         margin-left: 0.7rem;
         margin-right: 0.7rem;
         height: fit-content;
@@ -550,7 +577,7 @@ img.alpha{
         top: 0;
         width: 100%;        
         height: fit-content;        
-        line-height: 65px;
+        line-height: 62px;
         padding: 0;        
     } 
    
@@ -610,8 +637,7 @@ img.alpha{
         margin-bottom: 3rem;
     }
 
-    .parallelogram{    
-        line-height: 65px;
+    .parallelogram{   
         text-wrap: nowrap;
     } 
 
