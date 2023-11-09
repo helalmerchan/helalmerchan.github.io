@@ -68,9 +68,8 @@ body{
 
 /* header */
 .header-top{
-    padding: .5rem 1rem;
-    font-size: 0.8rem;
-    font-family: 'Roboto', sans-serif; 
+    padding: .3rem 1rem;
+    font-size: 0.75rem;
 }
 
 .bg-light{
