@@ -10,8 +10,6 @@
     --green-cta: #4ea951;
 }
 
-
-
 body{
     color: #8d908c;
     font-family: 'Lato', sans-serif;
@@ -136,7 +134,7 @@ img{
 }
 .slide-info{
     max-width: 600px;
-    margin: auto;
+    margin: 5% auto;
 }
 .button-group{    
     margin-top: 2.6rem;
@@ -642,12 +640,7 @@ img.alpha{
         text-wrap: nowrap;
     } 
 
-    .slide-info .btn {
-        width: 215px;
-        height: 56px;
-        font-size: 1.12rem;
-        line-height: 54px;
-    }
+   
     .btnlg{
         width: 300px;
         height: 60px;
@@ -661,5 +654,9 @@ img.alpha{
 
     .section-hero h1{
         font-size: 3rem;
+    }
+    .order-md-2 img{
+        width: 80%;
+        margin-left: 10%;
     }
 }
