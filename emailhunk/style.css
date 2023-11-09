@@ -81,9 +81,13 @@ body{
 }
 
 
+.navbar{
+    padding: .73rem 1rem;
+}
+
 .navbar-brand{
     display: inline-block;
-    width: 180px;
+    width: 165px;
 }
 
 .nav-item{
@@ -94,6 +98,7 @@ img{
     display: block;
     max-width: 100%;
 }
+
 
 .parallelogram{
     color: #ffffff;
@@ -623,10 +628,7 @@ img.alpha{
         padding-left: 1rem;
     }
 
-    .navbar-brand{
-        width: 206px;
-    }
-
+    
     .has-btn{
         width: 200px;
         margin-left: 1rem;
