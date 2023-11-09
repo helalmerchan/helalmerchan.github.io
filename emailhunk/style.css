@@ -67,8 +67,8 @@ body{
 
 /* header */
 .header-top{
-    padding: .7rem;
-    font-size: 0.9rem;
+    padding: .65rem 1rem;
+    font-size: 0.8rem;
     font-family: 'Roboto', sans-serif; 
 }
 
@@ -120,7 +120,7 @@ img{
 
 .social-icons a{
     color: #4ea951;
-    margin: 0 0.3rem;
+    margin: 0 0.5rem;
 }
 
 
@@ -141,13 +141,12 @@ img{
 .slide-info .btn{
     width: 185px;
     height: 46px;
-    vertical-align: middle;
     padding: 0;
-    line-height: 46px;
+    line-height: 44px;
     text-transform: capitalize;
 }
 .slide-info .btn:first-child{
-    margin-right: .75rem;
+    margin-right: 1rem;
 }
 
 .section-hero h1{
@@ -525,10 +524,7 @@ img.alpha{
    
 }
 
-@media (min-width: 768px) {
-    .header-top{
-        padding: 1rem;
-    }
+@media (min-width: 768px) {   
 
     .social-icons{
         display: flex;
@@ -536,6 +532,7 @@ img.alpha{
         justify-content: space-between;
         text-align: center;
     }
+
     .has-btn{
         position: relative;
         top: -33px;
@@ -548,7 +545,7 @@ img.alpha{
     .parallelogram{        
         text-transform: capitalize;
         border-radius: 0;
-        transform: skew(-18deg);        
+        transform: skew(-20deg);        
         position: absolute;
         top: 0;
         width: 100%;        
@@ -560,7 +557,7 @@ img.alpha{
     
     .skew-fix{
         display:inline-block;
-        transform: skew(18deg);
+        transform: skew(20deg);
     } 
 
     .platform-logos {
@@ -601,7 +598,7 @@ img.alpha{
     }
 
     .navbar-brand{
-        width: 223px;
+        width: 206px;
     }
 
     .has-btn{
@@ -618,11 +615,11 @@ img.alpha{
         text-wrap: nowrap;
     } 
 
-    .slide-info .btn{
-        width: 227px;
-        height: 63px;
+    .slide-info .btn {
+        width: 215px;
+        height: 56px;
         font-size: 1.12rem;
-        line-height: 63px;
+        line-height: 54px;
     }
     .btnlg{
         width: 300px;
