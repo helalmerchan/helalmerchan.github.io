@@ -176,6 +176,7 @@ img{
 .order-form h3{
     font-size: 2rem;
 }
+
 .form-control{
     color: #ffffff;
     font-weight: 300;
@@ -407,7 +408,7 @@ a.footer-logo{
     border-radius: 5px;
     border: none;
     height: 30px;
-    padding: 5px 8px;
+    padding: 5px 30px 5px 5px;
 }
 
 .subscribe input:focus{
@@ -467,17 +468,14 @@ a.footer-logo{
     font-size: 3rem;
 }
 .card-header .btn.collapsed:after{
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 2px;
-    background-color: #797979;    
-    font-size: 2rem;    
-}
-.card-header .btn:not(.collapsed):after{
     content: "+";   
     font-size: 2rem;
     right: 0;
+}
+.card-header .btn:not(.collapsed):after{
+    content: "–";
+    display: inline-block;     
+    font-size: 2rem;    
 }
 
 .easier h2,
