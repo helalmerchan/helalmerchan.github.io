@@ -769,6 +769,9 @@ a.footer-logo{
         font-size: 1.2rem;
     }
 
+    .order-2{
+        order: 2;
+    }
     
 }
 
