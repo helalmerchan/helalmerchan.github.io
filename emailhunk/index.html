@@ -618,7 +618,14 @@
     </footer><!-- END FOOTER -->
      
    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script>
+      let gallery = document.getElementById('light-gallery');
+      lightGallery(gallery, {
+        controles: true,
+        download: false
+      });
+    </script>  
     <script src="js/select.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
@@ -647,13 +654,7 @@
                   items:5
               }
           }
-      });
-
-      let gallery = document.getElementById('light-gallery');
-      lightGallery(gallery, {
-        controles: true,
-        download: false
-      });
+      });      
     </script>
   </body>
 </html>
