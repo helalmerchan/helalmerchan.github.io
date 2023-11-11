@@ -243,17 +243,15 @@ img{
 
 .carousel-control-next, 
 .carousel-control-prev {
-    bottom: 15px;
+    bottom: 50%;
+    transform: translateY(-50%);
     top: inherit;
-    background-color: #000 !important;
+    background-color: rgba(0,0,0,.5);
     width: 28px;
     height: 28px;
     text-align: center;
-    left: 70px;
 }
-.carousel-control-next{
-    left: 100px;
-}
+
 
 
 .order-form h3{
@@ -286,6 +284,7 @@ img{
 .btnlg.btn-success{        
     background: #09630b;
     margin-top: 3rem;
+    border: 1px solid #e3e3e3;
 }
 .btnlg.btn-success:hover{        
     background: #0c8d0e;
