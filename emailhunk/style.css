@@ -28,12 +28,12 @@
     width: 0;
     height: 0;
     border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
+    border-color: #0c0101 transparent transparent transparent;
   }
   
   /*point the arrow upwards when the select box is open (active):*/
   .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
+    border-color: transparent transparent #0c0101 transparent;
     top: 12px;
   }
   
@@ -43,7 +43,7 @@
     font-weight: 400;
     color: #ffffff;
     padding: 8px 16px;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.6) transparent;
     cursor: pointer;
     user-select: none;
     width: 100%;
@@ -202,9 +202,11 @@ img{
 .section-hero{
     padding-top: 3rem;
 }
+
+
 .slide-info{
     max-width: 600px;
-    margin: 5% auto;
+    margin: 3% auto 4%;
     padding-bottom: .79rem;
 }
 .button-group{    
@@ -237,6 +239,20 @@ img{
 .carousel-item{
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.carousel-control-next, 
+.carousel-control-prev {
+    bottom: 15px;
+    top: inherit;
+    background-color: #000 !important;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    left: 70px;
+}
+.carousel-control-next{
+    left: 100px;
 }
 
 
@@ -846,7 +862,7 @@ a.footer-logo{
 
 @media (min-width: 992px) {
     .section-hero{
-        padding-top: 6rem;
+        padding-top: 4rem;
     }
     .section-padding{
         padding: 5rem 0;
@@ -915,8 +931,16 @@ a.footer-logo{
 
 @media (min-width:1440px){
     .section-hero h1{
-        font-size: 4rem;
+        font-size: 3.7rem;
     }
 
+    .section-hero{
+        padding-top: 5rem;
+    }
+
+    .section-hero img{
+        width: 92%;
+        margin-left: 6%;
+    }
     
 }
