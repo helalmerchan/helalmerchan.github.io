@@ -645,8 +645,7 @@ a.footer-logo{
 
 .easier ol{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.3rem;
+    gap: 1rem;
     margin-top: 2rem;
 }
 
@@ -754,6 +753,8 @@ a.footer-logo{
     background-color: #dadada;
 }
 
+
+
 @media (max-width: 767px) {
     .no-margin{
         margin-left: 0;
@@ -765,6 +766,8 @@ a.footer-logo{
     .has-mb{
         margin-bottom: 1.2rem;
     }
+
+   
 
     .section-hero h5{
         font-size: .95rem;
@@ -787,6 +790,8 @@ a.footer-logo{
     .check-btns a{    
         font-size: 1.375rem;
     }
+   
+    
    
 }
 
@@ -819,7 +824,10 @@ a.footer-logo{
         line-height: 66px;
         padding: 0;        
     } 
-   
+    
+    .easier ol{
+        grid-template-columns: repeat(2, 1fr);
+    }
     
     .skew-fix{
         display:inline-block;
@@ -843,7 +851,7 @@ a.footer-logo{
     .section-padding{
         padding: 5rem 0;
     }
-    .easier ol,
+   
     .grid-gallery,
     .platform-logos {
         grid-template-columns: repeat(4, 1fr);
@@ -851,6 +859,10 @@ a.footer-logo{
 
     .check-features li{
         font-size: 1.2rem;
+    }
+
+    .easier ol{
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .order2{
