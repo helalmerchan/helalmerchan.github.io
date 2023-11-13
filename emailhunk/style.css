@@ -266,7 +266,7 @@ i.fa{
   }
   
   .select-items div:hover, .same-as-selected {
-    background-color: rgba(57, 152, 60, 1); 
+    background-color: rgb(33, 63, 34); 
   }
 
 .order-form h3{
@@ -292,7 +292,6 @@ i.fa{
     height: 50px;
     line-height: 48px;
     padding: 0;
-    text-transform: uppercase;
 }
 
 
@@ -300,6 +299,7 @@ i.fa{
     background: #09630b;
     margin-top: 3rem;
     border: 1px solid #e3e3e3;
+    text-transform: uppercase;
 }
 .btnlg.btn-success:hover{        
     background: #0c8d0e;
@@ -964,11 +964,11 @@ a.footer-logo{
     background-color: rgb(255, 255, 255);
       
   }
-  .order-form2 .select-items div:hover, .same-as-selected {
+  .order-form2 .select-items div:hover, .order-form2 .same-as-selected {
     background-color: rgb(219, 219, 219); 
   }
 
-  .order-form2 .select-items div, .select-selected {
+  .order-form2 .select-items div, .order-form2 .select-selected {
     color: #000;
   }
   .order-form2 .btnlg{
@@ -1144,7 +1144,6 @@ a.footer-logo{
         height: 54px;
         line-height: 50px;
         font-size: 1.2rem;
-        text-transform: uppercase;
     }
     
     .section-hero h1{
