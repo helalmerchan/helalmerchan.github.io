@@ -861,7 +861,10 @@ a.footer-logo{
     font-weight: 400;
     margin-bottom: 0.8rem;
 }
+
 .package ul{
+    font-size: .9rem;
+    line-height: 1.7;
     margin: .6rem auto 1rem auto;
 }
 .package .btn{
@@ -876,18 +879,7 @@ a.footer-logo{
     position: relative;    
 }
 
-.heilight{
-    position: absolute;
-    top: -8%;
-    right: -10%;
-    bottom: -8%;
-    left: -10%;
-    width: 120%;
-    height: 116%;
-    background: #fff;
-    border-radius: 6px;
-    padding: 3rem 1.2rem;
-}
+
 
 .standrad .badge{
     position: absolute;
@@ -896,10 +888,9 @@ a.footer-logo{
     text-transform: uppercase;
     background: #4ea951;
     color: #fff;
-    font-size: .6rem;
-    letter-spacing: 1.5px;
-    font-weight: 400;    
-    padding: 1% 2%;
+    font-size: .5rem;
+    letter-spacing: 1px;
+    padding: .7% 1.5%;
 }
 
   
@@ -921,10 +912,73 @@ a.footer-logo{
       border-color: orange;
     }
   }
-  
-  
- 
 
+  /* SERVICES UNIQUE */
+  .services-unique h2{
+    max-width: 700px;
+    margin: auto;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 4rem;
+  }
+
+  .tested{
+    padding-top: 3rem;
+  }
+
+  .services-unique h4{
+    font-weight: 700;
+    color: #000;
+    font-size: 1.4rem;
+  }
+
+  .services-unique p{
+    margin: 1.2rem 0;
+  }
+
+  .services-unique h6{
+    font-size: 1.3rem;
+  }
+  
+/* EMAIL DESIGN PAGE FORM */
+ .order-form2 .form-control{
+    background: #fff;
+    color: #000;
+    border-color:#4ea951;
+ } 
+ .order-form2 label{
+    color: #0c0101;
+ }
+
+ .order-form2 .select-selected {
+    background-color: #fff;
+    border: 1px solid #4ea951;
+ }
+ .order-form2 .custom-file{
+    border-bottom: 1px solid #4ea951;
+    border-radius: 6px;  
+ }
+  /*style items (options):*/
+  .order-form2 .select-items {
+    background-color: rgb(255, 255, 255);
+      
+  }
+  .order-form2 .select-items div:hover, .same-as-selected {
+    background-color: rgb(219, 219, 219); 
+  }
+
+  .order-form2 .select-items div, .select-selected {
+    color: #000;
+  }
+  .order-form2 .btnlg{
+    text-transform: capitalize;
+    margin-top: 2.7rem;
+  }
+
+
+ 
+/* RESPONSIBE STYLING */
 @media (max-width: 380px) {
     .slide-info .btn:first-child {
         margin-right: 0;
@@ -1018,7 +1072,18 @@ a.footer-logo{
         grid-template-columns: repeat(3, 1fr);
     }
 
-   
+    .heilight{
+        position: absolute;
+        top: -8%;
+        right: -10%;
+        bottom: -8%;
+        left: -10%;
+        width: 120%;
+        height: 116%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 3rem 1.2rem;
+    }
 
 }
 
