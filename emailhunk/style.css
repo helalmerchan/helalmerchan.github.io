@@ -790,7 +790,6 @@ a.footer-logo{
     margin-left: 1rem;
  }
 
-
 .typewriter {
     color: #f9593a;
 }
@@ -819,6 +818,8 @@ a.footer-logo{
 @keyframes blink {
     50% { opacity: 0 }
 }
+
+
 
 
 
@@ -1167,6 +1168,10 @@ a.footer-logo{
     .section-hero img{
         width: 90%;
         margin-left: 4%;
+    }
+
+    .email-design-hero {
+        padding-top: 4.6rem;
     }
     
 }
