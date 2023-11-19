@@ -848,6 +848,7 @@ a.footer-logo{
     background: #f8f8f8;
     padding: 2rem 1.2rem;
     border-radius: 6px;
+    position: relative;
 }
 .package h2{
     font-size: 4.4rem;
@@ -879,8 +880,6 @@ a.footer-logo{
 .standrad{
     position: relative;    
 }
-
-
 
 .standrad .badge{
     position: absolute;
@@ -1072,7 +1071,7 @@ a.footer-logo{
     .platform-logos {
         grid-template-columns: repeat(3, 1fr);
     }
-
+    
     .heilight{
         position: absolute;
         top: -8%;
@@ -1084,6 +1083,38 @@ a.footer-logo{
         background: #fff;
         border-radius: 6px;
         padding: 3rem 1.2rem;
+        cursor: pointer;
+        z-index: 100;
+
+    }
+
+    .scaleup:hover{
+        position: absolute;
+        top: -8%;
+        right: -10%;
+        bottom: -8%;
+        left: -10%;
+        width: 120%;
+        height: 116%;
+        background: #fff;
+        border-radius: 6px;
+        padding: 3rem 1.2rem;
+        cursor: pointer;
+    }
+    .scaleup:hover > .btn:focus,
+    .scaleup:hover > .btn{
+        background: #d94c30;
+        color: #fff;
+        border-color: #d94c30;
+    }
+
+    .scaleup:hover .heilight{
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: inherit;
+        height: inherit;
     }
 
 }
