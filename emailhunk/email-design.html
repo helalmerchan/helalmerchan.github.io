@@ -113,7 +113,7 @@
         <p class="had-mb"> Our pricing plan is simple, and cost effetive. Chooose one and get your custom branded email design. </p>
 
         <div class="pricing-table ">
-          <div class="package other">
+          <div class="package">
             <div class="scaleup basic">
               <h2><span>basic</span> <sup>$</sup>100</h2>
               <ul class="list-unstyles">
@@ -126,7 +126,7 @@
             </div>
           </div>
           <div class="package">
-            <div class="heilight standrad">
+            <div class="scaleup heilight standrad">
               <p class="badge ">popular</p>
               <h2><span>standrad</span> <sup>$</sup>150</h2>
               <ul class="list-unstyles">
@@ -138,7 +138,7 @@
               <button type="submit" class=" btn btn-danger rounded-pill">buy Now</button>
             </div>
           </div>
-          <div class="package other">
+          <div class="package">
             <div class="scaleup premium">
               <h2><span>primium</span> <sup>$</sup>350</h2>
               <ul class="list-unstyles">
@@ -453,10 +453,25 @@
     <script src="js/writting-affect.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
     <script>
+      // LIGHTGALLERY
       let gallery = document.getElementById('light-gallery');
       lightGallery(gallery, {
         controles: true,
         download: false
+      });
+
+      // PACKAGES
+      let pacKages = document.querySelectorAll('.package');
+      pacKages.forEach(package => {
+        package.addEventListener('mouseenter', () => {
+          document.querySelector('.heilighter')?.classList.remove('heilighter');
+          document.querySelector('.heilight')?.classList.remove('heilight');
+          package.classList.add('heilighter');
+        });
+
+        package.addEventListener('mouseleave', () => {
+          document.querySelector('.standrad').classList.add('heilight');
+        });
       });
     </script>  
     <script src="js/select.js"></script>
@@ -472,21 +487,11 @@
           margin:10,
           nav: false,
           responsive:{
-              0:{
-                  items:1
-              },
-              500:{
-                  items:2
-              },
-              900:{
-                  items:3
-              },
-              1300:{
-                  items:4
-              },
-              1500:{
-                  items:5
-              }
+            0:{items:1},
+            500:{items:2},
+            900:{items:3},
+            1300:{items:4},
+            1500:{items:5}
           }
       }); 
     </script>

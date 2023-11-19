@@ -1072,13 +1072,14 @@ a.footer-logo{
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .heilight{
+    .heilight,
+    .heilighter .scaleup:hover{
         position: absolute;
         top: -8%;
-        right: -10%;
+        right: -7%;
         bottom: -8%;
-        left: -10%;
-        width: 120%;
+        left: -7%;
+        width: 114%;
         height: 116%;
         background: #fff;
         border-radius: 6px;
@@ -1088,34 +1089,15 @@ a.footer-logo{
 
     }
 
-    .scaleup:hover{
-        position: absolute;
-        top: -8%;
-        right: -10%;
-        bottom: -8%;
-        left: -10%;
-        width: 120%;
-        height: 116%;
-        background: #fff;
-        border-radius: 6px;
-        padding: 3rem 1.2rem;
-        cursor: pointer;
-    }
-    .scaleup:hover > .btn:focus,
-    .scaleup:hover > .btn{
+   
+    .heilighter .scaleup:hover > .btn:focus,
+    .heilighter .scaleup:hover > .btn{
         background: #d94c30;
         color: #fff;
         border-color: #d94c30;
     }
 
-    .scaleup:hover .heilight{
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: inherit;
-        height: inherit;
-    }
+   
 
 }
 
