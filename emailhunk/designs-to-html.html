@@ -113,18 +113,20 @@
         <p class="had-mb">Pixel perfect email coding at best price. Chooose one and transform your design to responsive html email code </p>
 
         <div class="pricing-table ">
-          <div class="package basic">
-            <h2><span>basic</span> <sup>$</sup>60</h2>
-            <ul class="list-unstyles">
-              <li>3 Design Blocks</li>
-              <li>Pixel Perfect Coding</li>
-              <li>Responsive Layout</li>
-              <li>Emails Testing</li>
-            </ul>
-            <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
+          <div class="package">
+            <div class="scaleup basic">
+              <h2><span>basic</span> <sup>$</sup>60</h2>
+              <ul class="list-unstyles">
+                <li>3 Design Blocks</li>
+                <li>Pixel Perfect Coding</li>
+                <li>Responsive Layout</li>
+                <li>Emails Testing</li>
+              </ul>
+              <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
+            </div>
           </div>
-          <div class="package standrad">
-            <div class="heilight">
+          <div class="package">
+            <div class="scaleup heilight standrad">
               <p class="badge ">popular</p>
               <h2><span>standrad</span> <sup>$</sup>100</h2>
               <ul class="list-unstyles">
@@ -136,15 +138,17 @@
               <button type="submit" class=" btn btn-danger rounded-pill">buy Now</button>
             </div>
           </div>
-          <div class="package primium">
-            <h2><span>primium</span> <sup>$</sup>150</h2>
-            <ul class="list-unstyles">
-              <li>7+ Design Blocks</li>
-              <li>Pixel Perfect Coding</li>
-              <li>Responsive Layout</li>
-              <li>Emails Testing</li>
-            </ul>
-            <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
+          <div class="package">
+            <div class="scaleup primium">
+              <h2><span>primium</span> <sup>$</sup>150</h2>
+              <ul class="list-unstyles">
+                <li>7+ Design Blocks</li>
+                <li>Pixel Perfect Coding</li>
+                <li>Responsive Layout</li>
+                <li>Emails Testing</li>
+              </ul>
+              <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
+            </div>
           </div>
         </div>
       </div>
@@ -449,10 +453,25 @@
     <!-- <script src="js/writting-affect.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
     <script>
+      // LIGHTGALLERY
       let gallery = document.getElementById('light-gallery');
       lightGallery(gallery, {
         controles: true,
         download: false
+      });
+
+      // PACKAGES
+      let pacKages = document.querySelectorAll('.package');
+      pacKages.forEach(package => {
+        package.addEventListener('mouseenter', () => {
+          document.querySelector('.heilighter')?.classList.remove('heilighter');
+          document.querySelector('.heilight')?.classList.remove('heilight');
+          package.classList.add('heilighter');
+        });
+
+        package.addEventListener('mouseleave', () => {
+          document.querySelector('.standrad').classList.add('heilight');
+        });
       });
     </script>  
     <script src="js/select.js"></script>
