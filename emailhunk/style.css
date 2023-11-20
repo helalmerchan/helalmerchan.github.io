@@ -790,35 +790,32 @@ a.footer-logo{
     margin-left: 1rem;
  }
 
-.typewriter {
-    color: #f9593a;
-}
-
-.typewriter span {
-    color: #f9593a;
+ /* TYPEAFFECT */
+.typeaffect{
     position: relative;
+    display: inline-block;
+    color: #f9593a;
 }
 
-.typewriter span::before {
+.typeaffect:before{
     content: "";
-    height: 30px;
-    width: 2px;
     position: absolute;
-    top: 50%;
-    right: -8px;
-    background: #f9593a;
-    transform: translateY(-45%);
-    animation: blink 0.7s infinite;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-left: 2px solid #f9593a;
+    animation: animate 4s steps(12) infinite;
 }
-
-.typewriter span.stop-blinking::before {
-    animation: none;
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
 }
-
-@keyframes blink {
-    50% { opacity: 0 }
-}
-
 
 
 
