@@ -795,6 +795,8 @@ a.footer-logo{
     position: relative;
     display: inline-block;
     color: #f9593a;
+    overflow: hidden;
+    top: 10px;
 }
 
 .typeaffect:before{
@@ -810,7 +812,7 @@ a.footer-logo{
 }
 @keyframes animate{
     40%, 60%{
-        left: calc(100% + 4px);
+        left: calc(100% + 3px);
     }
     100%{
         left: 0%;
@@ -890,25 +892,14 @@ a.footer-logo{
     padding: .7% 1.5%;
 }
 
+.heilight .btn-outline-secondary{
+    background: #f9593a;
+    color: #fff;
+    border-color: #f9593a;
+}
+
   
-  @keyframes typing {
-    from {
-      width: 0
-    }
-    to {
-      width: 15em
-    }
-  }
   
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent
-    }
-    50% {
-      border-color: orange;
-    }
-  }
 
   /* SERVICES UNIQUE */
   .services-unique h2{
