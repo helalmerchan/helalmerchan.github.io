@@ -791,31 +791,20 @@ a.footer-logo{
  }
 
  /* TYPEAFFECT */
-.typeaffect{
-    position: relative;
-    display: inline-block;
+.typeaffect, .typeaffect2,.typeaffect3,.typeaffect4{
     color: #f9593a;
-    overflow: hidden;
-    top: 10px;
 }
 
-.typeaffect:before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    border-left: 2px solid #f9593a;
-    animation: animate 4s steps(12) infinite;
+.cursor{
+    animation: animate 1s infinite;
+    color: #f9593a;
 }
 @keyframes animate{
-    40%, 60%{
-        left: calc(100% + 3px);
+    0%{
+        opacity: 0;
     }
     100%{
-        left: 0%;
+        opacity: 1;
     }
 }
 
@@ -842,13 +831,7 @@ a.footer-logo{
     margin-top: 4rem;
     margin-bottom: 5rem;
 }
-.package{
-    color: #9fa3a7;
-    background: #f8f8f8;
-    padding: 2rem 1.2rem;
-    border-radius: 6px;
-    position: relative;
-}
+
 .package h2{
     font-size: 4.4rem;
     color: #000;
@@ -874,7 +857,20 @@ a.footer-logo{
     text-transform: uppercase;
     font-size: .7rem;
     letter-spacing: 1.5px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+    background: transparent;
+    transition: all .3s;
 }
+
+.package .btn:hover{
+    background: #f8431f;
+    color: #fff;
+    border-color: #f8431f;
+}
+
 
 .standrad{
     position: relative;    
@@ -889,17 +885,39 @@ a.footer-logo{
     color: #fff;
     font-size: .5rem;
     letter-spacing: 1px;
-    padding: .7% 1.5%;
+    padding: 1% 2%;
+    border-radius: 3px;
 }
 
-.heilight .btn-outline-secondary{
+.standrad .btn-outline-secondary{
     background: #f9593a;
     color: #fff;
     border-color: #f9593a;
 }
 
-  
-  
+.package:nth-child(2){
+    order: 3;
+}
+
+.package{
+    color: #9fa3a7;
+    cursor: pointer; 
+}
+
+.hover-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;    
+    background: #f8f8f8;                        
+    border-radius: 6px;
+    transition: all .3s;     
+    z-index: 10;     
+    padding: 2.5rem 1.2rem;              
+}
 
   /* SERVICES UNIQUE */
   .services-unique h2{
@@ -1060,31 +1078,60 @@ a.footer-logo{
         grid-template-columns: repeat(3, 1fr);
     }
     
-    .heilight,
-    .heilighter .scaleup:hover{
-        position: absolute;
-        top: -8%;
+    .standrad .hover-box{
+        top: -7%;
         right: -7%;
-        bottom: -8%;
+        bottom: -7%;
         left: -7%;
         width: 114%;
-        height: 116%;
+        height: 114%;
         background: #fff;
-        border-radius: 6px;
-        padding: 3rem 1.2rem;
-        cursor: pointer;
-        z-index: 100;
+        padding-top: 20%;
+        padding-bottom: 5%;
+        z-index: 20;
+    }
+    
+    .package:hover .hover-box{                
+        top: -7%;
+        right: -7%;
+        bottom: -7%;
+        left: -7%;
+        width: 114%;
+        height: 114%;
+        background: #fff;
+        z-index: 20;
+        padding-top: 20%;
+        padding-bottom: 5%;
+    }
+    
 
+    .package:nth-child(2):hover ~ .standrad .hover-box,
+    .package:first-child:hover ~ .standrad .hover-box{                
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f8f8f8; 
+        z-index: 10;
+        padding: 2.5rem 1.2rem;
+    }     
+    
+    .package:nth-child(2):hover ~ .standrad .btn-outline-secondary,
+    .package:first-child:hover ~ .standrad .btn-outline-secondary{
+        background: transparent;
+        color: #000;
+        border-color: #000;
     }
 
-   
-    .heilighter .scaleup:hover > .btn:focus,
-    .heilighter .scaleup:hover > .btn{
-        background: #d94c30;
+    .package:hover .btn:focus,
+    .package:hover .btn{
+        background: #f9593a;
         color: #fff;
-        border-color: #d94c30;
-    }
-
+        border-color: #f9593a;
+        margin-top: 10px;
+    }            
    
 
 }

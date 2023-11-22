@@ -90,7 +90,7 @@
           <div class="col-md-6">
             <div class="slide-info">
               <p class="has-green-icons"><i class="fa-solid fa-circle-check"></i> Responsive <i class="fa-solid fa-circle-check"></i> HTML/CSS <i class="fa-solid fa-circle-check"></i> Email Clien Testing</p>
-              <h1>Convert your PSD/AI/PDF/Figma to <span class="typeaffect">HTML Email</span></h1>
+              <h1>Convert your PSD/AI/PDF/Figma <br>to <span class="typeaffect2"></span><span class="cursor">|</span> </h1>
               <p>Email coding is a bit tricky as it have to support a full range of email clients for web and desktop/mobile  platform.  We transform your existing design files to responsive HTML Email that renders perfectly on most email elients. </p>
               
              
@@ -112,9 +112,9 @@
         <h2 class="had-mb">Choose a Pricing Plan</h2>
         <p class="had-mb">Pixel perfect email coding at best price. Chooose one and transform your design to responsive html email code </p>
 
-        <div class="pricing-table ">
-          <div class="package">
-            <div class="scaleup basic">
+        <div class="pricing-table ">          
+          <div class="package basic">
+            <div class="hover-box">
               <h2><span>basic</span> <sup>$</sup>60</h2>
               <ul class="list-unstyles">
                 <li>3 Design Blocks</li>
@@ -124,13 +124,12 @@
               </ul>
               <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
             </div>
-          </div>
-          <div class="package">
-            <div class="scaleup heilight standrad">
-              <p class="badge ">popular</p>
-              <h2><span>standrad</span> <sup>$</sup>100</h2>
+          </div>          
+          <div class="package primium">
+            <div class="hover-box">
+              <h2><span>primium</span> <sup>$</sup>150</h2>
               <ul class="list-unstyles">
-                <li>5 Design Blocks</li>
+                <li>7+ Design Blocks</li>
                 <li>Pixel Perfect Coding</li>
                 <li>Responsive Layout</li>
                 <li>Emails Testing</li>
@@ -138,11 +137,12 @@
               <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
             </div>
           </div>
-          <div class="package">
-            <div class="scaleup primium">
-              <h2><span>primium</span> <sup>$</sup>150</h2>
+          <div class="package standrad">
+            <div class="hover-box">
+              <p class="badge ">popular</p>
+              <h2><span>standrad</span> <sup>$</sup>100</h2>
               <ul class="list-unstyles">
-                <li>7+ Design Blocks</li>
+                <li>5 Design Blocks</li>
                 <li>Pixel Perfect Coding</li>
                 <li>Responsive Layout</li>
                 <li>Emails Testing</li>
@@ -157,7 +157,7 @@
     <!-- SERVICES -->
     <section class="services-unique section-padding">
       <div class="container-narrow">
-        <h2 class="text-center">Convert PSD/PDF/FIGMA/AI to responsive <span class="typeaffect">HTML EMAIL</span></h2>        
+        <h2 class="text-center">Convert PSD/PDF/FIGMA/AI to responsive <span class="typeaffect3">HTML EMAIL</span><span class="cursor">|</span></h2>        
         <div class="row had-mb">
           <div class="col-md-6">
             <img src="images/designs-to-code.png" alt="">
@@ -461,20 +461,21 @@
       });
 
       // PACKAGES
-      let pacKages = document.querySelectorAll('.package');
-      pacKages.forEach(package => {
-        package.addEventListener('mouseenter', () => {
-          document.querySelector('.heilighter')?.classList.remove('heilighter');
-          document.querySelector('.heilight')?.classList.remove('heilight');
-          package.classList.add('heilighter');
-        });
+      // let pacKages = document.querySelectorAll('.package');
+      // pacKages.forEach(package => {
+      //   package.addEventListener('mouseenter', () => {
+      //     document.querySelector('.heilighter')?.classList.remove('heilighter');
+      //     document.querySelector('.heilight')?.classList.remove('heilight');
+      //     package.classList.add('heilighter');
+      //   });
 
-        package.addEventListener('mouseleave', () => {
-          document.querySelector('.standrad').classList.add('heilight');
-        });
-      });
+      //   package.addEventListener('mouseleave', () => {
+      //     document.querySelector('.standrad').classList.add('heilight');
+      //   });
+      // });
     </script>  
     <script src="js/select.js"></script>
+    <script src="js/typeaffect.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

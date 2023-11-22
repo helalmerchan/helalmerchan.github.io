@@ -90,7 +90,7 @@
           <div class="col-md-6">
             <div class="slide-info">
               <p class="has-green-icons"><i class="fa-solid fa-circle-check"></i> Unique Design <i class="fa-solid fa-circle-check"></i> HTML/CSS <i class="fa-solid fa-circle-check"></i> Email Clien Testing</p>
-              <h1>Best email template design service <br>for <span class="typeaffect">agency</span></h1>
+              <h1>Best email template design service <br>for <span class="typeaffect"></span><span class="cursor">|</span></h1>
               <p>Now you can focus more on marketing and we do the creative parts.  Our experts team transform your idea to a eye catching email template. Take your email marketing to next level with our beautifully crafted email newsletter.</p>
               
              
@@ -100,9 +100,7 @@
               </div>
             </div>
           </div>                
-        </div>
-
-        
+        </div>        
       </div>
     </section><!-- END HERO AREA -->
 
@@ -113,40 +111,42 @@
         <p class="had-mb"> Our pricing plan is simple, and cost effetive. Chooose one and get your custom branded email design. </p>
 
         <div class="pricing-table ">
-          <div class="package">
-            <div class="scaleup basic">
+          <div class="package basic">
+            <div class="hover-box">  
               <h2><span>basic</span> <sup>$</sup>100</h2>
-              <ul class="list-unstyles">
-                <li>3 Design Blocks</li>
-                <li>HTML/CSS Coversion</li>
-                <li>Responsive Layout</li>
-                <li>Emails Testing</li>
-              </ul>
-              <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
+                <ul class="list-unstyles">
+                    <li>3 Design Blocks</li>
+                    <li>HTML/CSS Coversion</li>
+                    <li>Responsive Layout</li>
+                    <li>Emails Testing</li>
+                </ul>
+                <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
             </div>
           </div>
-          <div class="package">
-            <div class="scaleup heilight standrad">
+          
+          <div class="package premium">
+            <div class="hover-box">
+                <h2><span>primium</span> <sup>$</sup>350</h2>
+                <ul class="list-unstyles">
+                    <li>7 Design Blocks</li>
+                    <li>HTML/CSS Coversion</li>
+                    <li>Responsive Layout</li>
+                    <li>Emails Testing</li>
+                </ul>
+                <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
+            </div>
+          </div>
+
+          <div class="package standrad">
+            <div class="hover-box">
               <p class="badge ">popular</p>
-              <h2><span>standrad</span> <sup>$</sup>150</h2>
-              <ul class="list-unstyles">
-                <li>5 Design Blocks</li>
-                <li>HTML/CSS Coversion</li>
-                <li>Responsive Layout</li>
-                <li>Emails Testing</li>
-              </ul>
-              <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
-            </div>
-          </div>
-          <div class="package">
-            <div class="scaleup premium">
-              <h2><span>primium</span> <sup>$</sup>350</h2>
-              <ul class="list-unstyles">
-                <li>7 Design Blocks</li>
-                <li>HTML/CSS Coversion</li>
-                <li>Responsive Layout</li>
-                <li>Emails Testing</li>
-              </ul>
+                <h2><span>standrad</span> <sup>$</sup>150</h2>
+                <ul class="list-unstyles">
+                    <li>5 Design Blocks</li>
+                    <li>HTML/CSS Coversion</li>
+                    <li>Responsive Layout</li>
+                    <li>Emails Testing</li>
+                </ul>
               <button type="submit" class=" btn btn-outline-secondary rounded-pill">buy Now</button>
             </div>
           </div>
@@ -157,7 +157,7 @@
     <!-- SERVICES -->
     <section class="services-unique section-padding">
       <div class="container-narrow">
-        <h2 class="text-center">Get you unique custom email template design <span class="typeaffect">everytime</span></h2>        
+        <h2 class="text-center">Get you unique custom email template design <span class="typeaffect4">everytime</span><span class="cursor">|</span></h2>        
         <div class="row had-mb">
           <div class="col-md-6">
             <img src="images/betking.png" alt="">
@@ -460,21 +460,10 @@
         download: false
       });
 
-      // PACKAGES
-      let pacKages = document.querySelectorAll('.package');
-      pacKages.forEach(package => {
-        package.addEventListener('mouseenter', () => {
-          document.querySelector('.heilighter')?.classList.remove('heilighter');
-          document.querySelector('.heilight')?.classList.remove('heilight');
-          package.classList.add('heilighter');
-        });
-
-        package.addEventListener('mouseleave', () => {
-          document.querySelector('.standrad').classList.add('heilight');
-        });
-      });
+    
     </script>  
     <script src="js/select.js"></script>
+    <script src="js/typeaffect.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
