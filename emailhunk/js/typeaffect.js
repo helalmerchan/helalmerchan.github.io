@@ -2,12 +2,9 @@ function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  const phrasesA = ["agency", "ecommerce", "marketers", "Home services"];
+  const phrasesA = ["agency", "ecommerce", "marketers", "indivisuals"];
   const elemA = document.querySelector(".typeaffect");
   
-  const phrasesB = ["HTML Email", "Newsletter", "Template", "HTML code"];
-  const elemB = document.querySelector(".typeaffect2");
-
 
   let sleepTime = 100;
   let curPhraseIndex = 0;  
@@ -36,9 +33,13 @@ function sleep(ms) {
         curPhraseIndex++;
       }
     }
-  };
-
-  
+  };  
   writeLoop(elemA, phrasesA);
+  
 
-  writeLoop(elemB, phrasesB);
+  const phrasesB = ["PSD design", "AI design", "PDF design", "Figma design"];
+  let elemBs = document.querySelectorAll('.typeaffect2');
+      
+  elemBs.forEach(elemB => {
+    writeLoop(elemB, phrasesB);  
+  });
