@@ -51,7 +51,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home </a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="email-design.html">Email Design <span class="sr-only">(current)</span></a>
@@ -60,10 +60,10 @@
                 <a class="nav-link" href="designs-to-html.html">Design to HTML</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Interactive Email</a>
+                <a class="nav-link" href="interactive-email.html">Interactive Email</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="blog.html">Blog</a>
               </li>     
             </ul>
             <div class="nav-item has-btn">
@@ -73,7 +73,12 @@
               <a href=""><i class="fa-brands fa-facebook-f"></i></a>
               <a href=""><i class="fa-brands fa-twitter"></i></a>
               <a href=""><i class="fa-brands fa-instagram"></i></a>
-              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin-in"></i></a>             
+
+              <form class="search-form">
+                <span class="search-toggler"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input class="search-input" type="text" placeholder="Search.. ">
+              </form>
             </div>
           </div>
         </nav>
@@ -157,7 +162,7 @@
     <!-- SERVICES -->
     <section class="services-unique section-padding">
       <div class="container-narrow">
-        <h2 class="text-center">Convert your <span class="typeaffect2"></span><span class="cursor">|</span> to <br> responsive HTML EMAIL</h2>        
+        <h2 class="text-center">Convert your <span class="typeaffect2"></span><span class="cursor">|</span> to <br> responsive HTML email</h2>        
         <div class="row had-mb">
           <div class="col-md-6">
             <img src="images/designs-to-code.png" alt="">
@@ -345,7 +350,7 @@
         
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
               <div class="card-body">
-                <p>Nope, we'll not provide email copy. So that you can do anything you want later.</p>
+                <p>Nope, we'll not provide email copy. Currently we don't have this service </p>
               </div>
             </div>
           </div>
@@ -451,29 +456,8 @@
     </footer><!-- END FOOTER -->
      
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
-    <script>
-      // LIGHTGALLERY
-      let gallery = document.getElementById('light-gallery');
-      lightGallery(gallery, {
-        controles: true,
-        download: false
-      });
-
-      // PACKAGES
-      // let pacKages = document.querySelectorAll('.package');
-      // pacKages.forEach(package => {
-      //   package.addEventListener('mouseenter', () => {
-      //     document.querySelector('.heilighter')?.classList.remove('heilighter');
-      //     document.querySelector('.heilight')?.classList.remove('heilight');
-      //     package.classList.add('heilighter');
-      //   });
-
-      //   package.addEventListener('mouseleave', () => {
-      //     document.querySelector('.standrad').classList.add('heilight');
-      //   });
-      // });
-    </script>  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>  
+    <script src="js/search-toggler.js"></script>
     <script src="js/select.js"></script>
     <script src="js/typeaffect.js"></script>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

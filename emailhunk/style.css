@@ -982,8 +982,78 @@ a.footer-logo{
     margin-top: 2.7rem;
   }
 
+  /* SEARCH FORM */
+.search-toggler{
+    cursor: pointer;
+    color: #464545;
+}
 
- 
+.search-toggler:hover{
+    cursor: pointer;
+    color: #000;
+}
+
+
+
+.search-input{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px rgba(57, 152, 60, .6);    
+    transition: all .3s;
+    padding: 5px 10px;
+}
+
+
+
+/* BLOG PAGE */
+.has-boxshadow{
+    box-shadow: 0 0 3px rgba(198, 198, 198, .7);
+    margin-bottom: 2rem;
+}
+.has-boxshadow header{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.has-boxshadow a{
+    text-decoration: none;
+    color: #1b1a1a;
+    transition: .3s;
+}
+
+.has-boxshadow a:hover{
+    color:rgba(31, 63, 32, 0.5);
+}
+
+.blog-contents{
+    max-width: 869px;
+    margin: auto;
+    padding: 3rem 0;
+}
+
+.no-border{
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.blog-contents .btn-Light{
+    border: 1px solid rgba(198, 198, 198, .7);
+    display: block;
+    margin: auto;
+    width: 180px;
+    border-radius: 0;
+}
+.blog-contents .btn-Light:hover{
+    background: #282727;
+    color: #fff;
+}
+
+hr.has-border{
+    width: 640px;
+    margin: auto;
+}
+
 /* RESPONSIBE STYLING */
 @media (max-width: 380px) {
     .slide-info .btn:first-child {
@@ -992,7 +1062,16 @@ a.footer-logo{
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
+    .search-toggler{
+        display: none;
+    }
+
+    .search-form{
+        max-width: 190px;
+        margin: 1.2rem auto;
+    }
+    
     .no-margin{
         margin-left: 0;
         margin-right: 0;
@@ -1036,6 +1115,28 @@ a.footer-logo{
         align-items: center;
         justify-content: space-between;
         text-align: center;
+    }
+
+    .search-form{
+        position: relative;
+        margin-left: 15px;
+    }
+    
+    .search-input{    
+        position: absolute;
+        top: 48px;
+        right: 0;
+        width: 0;
+        height: 0;
+        padding: 0; 
+        transition: all .3s;
+    }
+    
+    .show-hide{    
+        top: 48px;
+        width: inherit;
+        height: inherit;
+        padding: 5px 10px;
     }
 
     .has-btn{
