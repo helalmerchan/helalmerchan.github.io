@@ -2,9 +2,8 @@ function sleep(ms) {
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
-  const phrasesA = ["agency", "ecommerce", "marketers", "indivisuals"];
-  const elemA = document.querySelector(".typeaffect");
-  
+  const phrasesA = ["agency", "eCommerce", "marketers", "indivisuals"];
+  const elemA = document.querySelector(".typeaffect");  
 
   let sleepTime = 100;
   let curPhraseIndex = 0;  
@@ -43,3 +42,25 @@ function sleep(ms) {
   elemBs.forEach(elemB => {
     writeLoop(elemB, phrasesB);  
   });
+
+  const phrasesC = ["Gif", "video"];
+  let elemCs = document.querySelectorAll('.typeaffect3');
+      
+  elemCs.forEach(elemC => {
+    writeLoop(elemC, phrasesC);  
+  });
+
+  
+  // PACKAGES
+  // let pacKages = document.querySelectorAll('.package');
+  // pacKages.forEach(package => {
+  //   package.addEventListener('mouseenter', () => {
+  //     document.querySelector('.heilighter')?.classList.remove('heilighter');
+  //     document.querySelector('.heilight')?.classList.remove('heilight');
+  //     package.classList.add('heilighter');
+  //   });
+
+  //   package.addEventListener('mouseleave', () => {
+  //     document.querySelector('.standrad').classList.add('heilight');
+  //   });
+  // });
