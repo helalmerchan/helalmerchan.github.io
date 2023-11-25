@@ -271,6 +271,8 @@ i.fa{
 
 .order-form h3{
     font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 
 .form-control{
