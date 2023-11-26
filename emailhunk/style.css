@@ -147,6 +147,27 @@ i.fa{
     margin: 0 0.5rem;
 }
 
+/* SEARCH FORM */
+.search-toggler{
+    cursor: pointer;
+    color: #4ea951;
+}
+
+.search-toggler:hover{
+    cursor: pointer;
+    color: #429244;
+}
+
+
+
+.search-input{
+    font-family: 'Lato', sans-serif;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 2px rgba(57, 152, 60, .6);    
+    transition: all .3s;
+    padding: 5px 10px;
+}
 
 
 /* Banner */
@@ -325,12 +346,12 @@ i.fa{
     bottom: 0;
     width: 96px;
 }
-.form-control::placeholder{
+.gradient-bg .form-control::placeholder{
 	color: #fff;
 	opacity:  1;
 }
 
-.form-control:ms-input-placeholder{
+.gradient-bg .form-control:ms-input-placeholder{
 	color: #fff;
 }
 .select-container{
@@ -984,27 +1005,7 @@ a.footer-logo{
     margin-top: 2.7rem;
   }
 
-  /* SEARCH FORM */
-.search-toggler{
-    cursor: pointer;
-    color: #464545;
-}
 
-.search-toggler:hover{
-    cursor: pointer;
-    color: #000;
-}
-
-
-
-.search-input{
-    font-family: 'Lato', sans-serif;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 2px rgba(57, 152, 60, .6);    
-    transition: all .3s;
-    padding: 5px 10px;
-}
 
 
 
@@ -1028,7 +1029,8 @@ a.footer-logo{
     color:rgba(31, 63, 32, 0.5);
 }
 
-.blog-contents{
+.blog-contents,
+.comments-form{
     max-width: 869px;
     margin: auto;
     padding: 3rem 0;
@@ -1054,6 +1056,59 @@ a.footer-logo{
 hr.has-border{
     width: 640px;
     margin: auto;
+}
+
+.single-post h2{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+}
+.comments-form .form-control{
+    background: transparent;
+    color: #8d908c;
+}
+
+.comments-form .btn-success{
+    border-radius: 0;
+    background: #2e933f;
+    width: 190px;
+    height: 48px;
+    line-height: 46px;
+    padding: 0;
+}
+
+.comments-form .btn-success:hover{
+    background: #2a8339;
+}
+textarea {
+    resize: none;
+}
+
+.comments-form textarea{
+    height: 200px;
+    margin-top: 1.2rem;
+}
+
+.width1-3rd{
+    width: 33%;
+}
+
+/* BOOK ORDER PAGE */
+.book-email-design-hero{
+    padding: 3rem 0 1.5rem;
+}
+.book-email-design-hero img{
+    display: block;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+.book-email-design-hero h1{
+    font-weight: 700;
+    color: #000;
+}
+.book-email-design-hero h1 span{
+    color: #f9593a
 }
 
 /* RESPONSIBE STYLING */
