@@ -1,13 +1,13 @@
 
 let width = window.innerWidth;
-if(width >= 768){
-    // SEARCH HEADER
-    let searchToggler = document.querySelector('.search-toggler');
-    let searchInput = document.querySelector('.search-input');
-    searchToggler.addEventListener('click', function(){
-        searchInput.classList.toggle('show-hide');
-    });
-}
+// SEARCH HEADER
+let searchToggler = document.querySelector('.search-toggler');
+let iconXmGlass = document.querySelector('.search-toggler i');
+let searchInput = document.querySelector('.search-input');
+searchToggler.addEventListener('click', function(){      
+  searchInput.classList.toggle('show-hide');
+  iconXmGlass.classList.toggle('fa-x');
+});
 
 // LIGHTGALLERY
 let gallery = document.getElementById('light-gallery');
