@@ -198,10 +198,12 @@ i.fa{
     margin-right: 1rem;
 }
 
-.section-hero h1{
+.section-hero h1,
+.section-hero h2{
     font-weight: 700;
     color: black;
     margin: 1.3rem 0;
+    font-size: 2.5rem;
 }
 
 .section-hero h5{
@@ -1425,17 +1427,20 @@ h3.x-large{
         font-size: 1.2rem;
     }
     
-    .section-hero h1{
+    .section-hero h1,
+    .section-hero h2{
         font-weight: 900;
         margin: 1.2rem 0;
         font-size: 3.2rem;
+        color: #000;
     }
 
     
 }
 
 @media (min-width:1440px){
-    .section-hero h1{
+    .section-hero h1,
+    .section-hero h2{
         font-size: 3.5rem;
     }
 
