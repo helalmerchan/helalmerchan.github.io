@@ -664,8 +664,12 @@ img.quote{
 .excerpt{
     padding: 1rem;
 }
-.excerpt h4{
+.excerpt h4 a{
     color: #000;
+    text-decoration: none;
+}
+.excerpt h4 a:hover{
+    color: #8d908c;
 }
 .excerpt h4,
 .excerpt p{
@@ -1113,6 +1117,7 @@ textarea {
 /* 404 PAGE */
 .not-found img{
     display: inline-block;
+    max-width: 400px;
     margin: auto;
 }
 h3.x-large{
@@ -1124,6 +1129,11 @@ h3.x-large{
 .not-found .btnlg.btn-success{
    background:  #2e933f;
    border-color:  #2e933f;
+   text-transform: capitalize;
+}
+.not-found .btnlg.btn-success:hover{
+   background:  #2a8338;
+   border-color:  #2a8338;
    text-transform: capitalize;
 }
 
@@ -1243,7 +1253,7 @@ h3.x-large{
     .search-input{    
         position: absolute;
         top: 50%;
-        right: 45px;
+        right: 42px;
         width: 0;
         height: 48px;
         padding: 0; 
