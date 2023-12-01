@@ -151,6 +151,8 @@ i.fa{
 .search-toggler{
     cursor: pointer;
     color: #4ea951;
+    display: inline-block;    
+    width: 20px;
 }
 
 .search-toggler:hover{
@@ -1006,9 +1008,6 @@ a.footer-logo{
   }
 
 
-
-
-
 /* BLOG PAGE */
 .has-boxshadow{
     box-shadow: 0 0 3px rgba(198, 198, 198, .7);
@@ -1029,6 +1028,7 @@ a.footer-logo{
     color:rgba(31, 63, 32, 0.5);
 }
 
+.terms-condition,
 .blog-contents,
 .comments-form{
     max-width: 869px;
@@ -1054,7 +1054,7 @@ a.footer-logo{
 }
 
 hr.has-border{
-    width: 640px;
+    max-width: 640px;
     margin: auto;
 }
 
@@ -1111,6 +1111,56 @@ textarea {
     color: #f9593a
 }
 
+/* 404 PAGE */
+.not-found img{
+    display: inline-block;
+    margin: auto;
+}
+h3.x-large{
+    font-size: 6rem;
+    font-weight: 900;
+    color: #2e933f;
+}
+
+.not-found .btnlg.btn-success{
+   background:  #2e933f;
+   border-color:  #2e933f;
+   text-transform: capitalize;
+}
+
+.TermsnCondition h2{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000;
+}
+.TermsnCondition h5{
+    font-weight: 700;
+    color: #000;
+    margin-top: 3rem;
+}
+
+.star-list li,
+.dashed-list li{
+    padding-left: 1rem;
+    position: relative;
+}
+.star-list li:before{
+    content: '*';
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.dashed-list li:before{
+    content: '-';
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.privecypolicy h6{
+    margin-top: 3rem;
+}
+
 /* RESPONSIBE STYLING */
 @media (max-width: 380px) {
     .slide-info .btn:first-child {
@@ -1119,14 +1169,35 @@ textarea {
     }
 }
 
-@media (max-width: 767px) { 
-    .search-toggler{
-        display: none;
-    }
+@media (max-width: 767px) {   
 
-    .search-form{
-        max-width: 190px;
-        margin: 1.2rem auto;
+    form.search-form{
+        position: absolute;
+        width: 240px;
+        top: 8px;
+        right: 80px;
+        z-index: 1000;
+    }
+    
+    .search-toggler{
+        position: absolute;
+        top: 8px;
+        right: 0;      
+    }
+    
+    .search-input{    
+        position: absolute;
+        top: 0;
+        right: 30px;
+        width: 0;
+        height: 46px;
+        padding: 0; 
+        transition: all .3s;
+    }
+    
+    .show-hide{    
+        width: 220px;        
+        padding: 5px 10px;
     }
     
     .no-margin{
@@ -1153,17 +1224,7 @@ textarea {
 
 
 
-@media (min-width: 768px) and (max-width: 992px){
-    .navbar-expand-md .navbar-nav {
-        flex-wrap: wrap;
-    }
 
-    .check-btns a{    
-        font-size: 1.375rem;
-    }
-      
-   
-}
 
 @media (min-width: 768px) {   
 
@@ -1174,25 +1235,25 @@ textarea {
         text-align: center;
     }
 
-    .search-form{
-        position: relative;
+
+    form.search-form{
         margin-left: 15px;
+        position: relative;
     }
     
     .search-input{    
         position: absolute;
-        top: 48px;
-        right: 0;
+        top: 50%;
+        right: 45px;
         width: 0;
-        height: 0;
+        height: 48px;
         padding: 0; 
+        transform: translateY(-50%);
         transition: all .3s;
     }
     
     .show-hide{    
-        top: 48px;
-        width: inherit;
-        height: inherit;
+        width: 300px;        
         padding: 5px 10px;
     }
 
@@ -1292,6 +1353,12 @@ textarea {
     }            
    
 
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .navbar-expand-md .navbar-nav {
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width: 992px) {
