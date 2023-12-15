@@ -92,9 +92,7 @@ img{
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
-.btn350{
-    min-width: 350px;    
-}
+
 
 .button:focus,
 .button:hover {
@@ -146,7 +144,7 @@ img{
     display: grid;
     margin-bottom: 0;
     padding: 3rem 0;
-    gap: 40px;
+    gap: 60px;
 }
 
 .boxes li{
@@ -190,9 +188,19 @@ img{
 .box p{
     margin: 10% auto 1.3rem ;
 }
+
+
+.box:nth-child(1):after,
+.box:nth-child(2):after{
+    content: "";    
+    position: absolute;
+    
+}
+
 .hadbtn p{
     margin-top: 5%;
 }
+
 
 /* VIDEOBG */
 .video-bg{
@@ -417,6 +425,19 @@ img{
     .text-sm-center{
         text-align: center;
     }
+    .video-bg .button{
+        text-wrap: wrap;
+        width: 90%;
+    }
+
+    .box:nth-child(1):after,
+    .box:nth-child(2):after{
+        left: 50%;
+        top: 100%;
+        width: 2px;
+        height: 60px;
+        border-left: 1px dashed #999;
+    }
 
     .flex-cols,
     .footer-links{
@@ -446,6 +467,9 @@ img{
     .order-md-3{
         order: 3;
     }
+    .btn350{
+        min-width: 350px;    
+    }
 
     .banner p{
         width: 90%;
@@ -453,6 +477,15 @@ img{
     .boxes{
         grid-template-columns: repeat(3, 1fr);
     } 
+
+    .box:nth-child(1):after,
+    .box:nth-child(2):after{
+        right: -60px;
+        top: 50%;
+        width: 60px;
+        height: 2px;
+        border-bottom: 1px dashed #999;
+    }
 
     .text-lg{
         font-size: 1.5rem;
@@ -462,8 +495,7 @@ img{
     }
 
     .boxes p{
-        font-size: 1.2rem;
-        
+        font-size: 1.2rem;        
         width: 85%;
     }
 
