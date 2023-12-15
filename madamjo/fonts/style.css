@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'madamjo';
+  src:  url('madamjo.eot?2bt2e8');
+  src:  url('madamjo.eot?2bt2e8#iefix') format('embedded-opentype'),
+    url('madamjo.ttf?2bt2e8') format('truetype'),
+    url('madamjo.woff?2bt2e8') format('woff'),
+    url('madamjo.svg?2bt2e8#madamjo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'madamjo' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-card:before {
+  content: "\e900";
+}
+.icon-cash:before {
+  content: "\e901";
+}
+.icon-desecret:before {
+  content: "\e902";
+}
+.icon-extension:before {
+  content: "\e903";
+}
+.icon-eyebling:before {
+  content: "\e904";
+}
+.icon-glass:before {
+  content: "\e905";
+}
+.icon-network:before {
+  content: "\e906";
+}
+.icon-support:before {
+  content: "\e907";
+}
