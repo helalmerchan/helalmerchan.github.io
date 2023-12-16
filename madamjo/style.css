@@ -31,11 +31,17 @@ img{
     font-size: 1rem;
     background: #343434;
     border-color: #343434;
+    padding: .75em 1.6rem;
+}
+.banner .winning-thrill:hover{
+    background: #222;
+    border-color: #222;
 }
 
 .gradient-text{
     background: -webkit-linear-gradient(-45deg, #eee 50% , rgba(255,255,255, .25));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 2rem 0;
 }
