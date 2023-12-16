@@ -29,6 +29,8 @@ img{
 /* BANNER */
 .banner .winning-thrill{
     font-size: 1rem;
+    background: #343434;
+    border-color: #343434;
 }
 
 .gradient-text{
