@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'madamjo';
-  src:  url('madamjo.eot?2bt2e8');
-  src:  url('madamjo.eot?2bt2e8#iefix') format('embedded-opentype'),
-    url('madamjo.ttf?2bt2e8') format('truetype'),
-    url('madamjo.woff?2bt2e8') format('woff'),
-    url('madamjo.svg?2bt2e8#madamjo') format('svg');
+  src:  url('madamjo.eot?h3jfkr');
+  src:  url('madamjo.eot?h3jfkr#iefix') format('embedded-opentype'),
+    url('madamjo.ttf?h3jfkr') format('truetype'),
+    url('madamjo.woff?h3jfkr') format('woff'),
+    url('madamjo.svg?h3jfkr#madamjo') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,27 +25,39 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-desecretply:before {
+  content: "\e908";
+  color: #5f666e;
+}
 .icon-card:before {
   content: "\e900";
+  color: #5f666e;
 }
 .icon-cash:before {
   content: "\e901";
+  color: #5f666e;
 }
 .icon-desecret:before {
   content: "\e902";
+  color: #5f666e;
 }
 .icon-extension:before {
   content: "\e903";
+  color: #5f666e;
 }
 .icon-eyebling:before {
   content: "\e904";
+  color: #5f666e;
 }
 .icon-glass:before {
   content: "\e905";
+  color: #5f666e;
 }
 .icon-network:before {
   content: "\e906";
+  color: #5f666e;
 }
 .icon-support:before {
   content: "\e907";
+  color: #5f666e;
 }
