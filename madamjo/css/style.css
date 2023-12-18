@@ -442,14 +442,15 @@ img{
     display: grid;
     grid-template-columns: repeat(5, minmax(320px, 1fr));
     gap: .5rem;
-    margin-left: -4%;
+    margin-left: -3%;
+    margin-right: -3%;
 }
 
 .thumb-gallery img{
     border: 6px solid #343434;
-    border-radius: 20px;
+    border-radius: 30px;
     display: block;
-    width: 320px;
+    width: 100%;
     margin: 0;
     padding: 0;
 
