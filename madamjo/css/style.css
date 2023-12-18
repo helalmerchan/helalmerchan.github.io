@@ -8,7 +8,8 @@
 
     --size-wheel: 550px;
     --size-wheel-tab: 480px;
-    --size-wheel-mob: 320px;
+    --size-wheel-mob: 320px;    
+    --size-wheel-mobxs: 270px;
 }
 
 body{
@@ -822,6 +823,24 @@ span.yb-gradient{
         border-bottom: 60px solid #4f3be6;
     }
 }
+
+@media (max-width: 320px){
+    .spining-header.btn168{
+        width: 130px;
+    }
+    .spining-header.btn168 span{
+        padding: .4rem 0;
+    }
+
+    .wheel-section,
+    .wheel {
+        width: var(--size-wheel-mobxs);
+        height: var(--size-wheel-mobxs);
+        margin-left: 0;
+    }
+    
+}
+
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
