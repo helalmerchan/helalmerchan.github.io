@@ -449,8 +449,8 @@ img{
     display: grid;
     grid-template-columns: repeat(5, minmax(320px, 1fr));
     gap: .5rem;
-    margin-left: -6%;
-    margin-right: -6%;
+    margin-left: -120px;
+    margin-right: -120px;
 }
 
 .thumb-gallery img{
@@ -787,6 +787,8 @@ span.yb-gradient{
         position: relative;
         margin-top: -20px;
     }
+
+   
 
     .wheel-bg h1{
         font-size:calc(2.4rem + 1.5vw);
