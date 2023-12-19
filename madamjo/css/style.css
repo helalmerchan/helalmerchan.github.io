@@ -8,7 +8,7 @@
 
     --size-wheel: 550px;
     --size-wheel-tab: 480px;
-    --size-wheel-mob: 320px;    
+    --size-wheel-mob: 320px;
     --size-wheel-mobxs: 270px;
 }
 
@@ -35,8 +35,9 @@ img{
     height: auto;
 }
 
-.main-header{
-    background: #000 url('../images/glow-topright.png') top right no-repeat;
+.casino-header{
+    background: #000 url('../images/casino-header-bg.png') right center no-repeat;
+    background-size: cover;
 }
 
 .btn168{
@@ -70,9 +71,13 @@ img{
     line-height: 1.8;
 }
 
+
+
 .btn350{
     font-size: 1.3rem;
+    width: 350px;
 }
+
 .marquee{
     background: transparent;
     color: #fff;
@@ -104,7 +109,7 @@ img{
 }
 
 .button {    
-    border: double 2px transparent;
+    border: double 1px transparent;
     border-radius: 80px;
     display:inline-block;
     background-image: linear-gradient(to bottom right, #201F22, #050505), radial-gradient(circle at top left, #39D78B, #FDAD37, #B198FC, #374BFD);
@@ -169,7 +174,7 @@ img{
     display: grid;
     margin-bottom: 0;
     padding: 3rem 0;
-    gap: 60px;
+    gap: 20px;
 }
 
 .boxes li{
@@ -210,9 +215,7 @@ img{
     font-size: 1.2rem;
 }
 
-.box p{
-    margin: 10% auto 1.3rem ;
-}
+
 
 
 .box:nth-child(1):after,
@@ -276,6 +279,10 @@ img{
 /* FORM */
 .advantage{
     background-color: #000;
+}
+
+.join-free{
+    font-size: 1.27rem;
 }
 
 
@@ -412,12 +419,12 @@ img{
     background-color: #1b1b1b;
 }
 
-.text-grey{
+.form-box .text-grey{
     display: block;
+
 }
 
 /* BETTING PAGE */
-
 .betting .button{
     background-image: linear-gradient(to bottom right, #201F22, #050505), radial-gradient(circle at top left, #F5AE36,  #3E8AFF);
 }
@@ -442,8 +449,8 @@ img{
     display: grid;
     grid-template-columns: repeat(5, minmax(320px, 1fr));
     gap: .5rem;
-    margin-left: -3%;
-    margin-right: -3%;
+    margin-left: -6%;
+    margin-right: -6%;
 }
 
 .thumb-gallery img{
@@ -480,7 +487,6 @@ img{
 }
 
 .betting .text-lg {
-    width: 100%;
     margin-bottom: 2.5rem;
 }
 
@@ -595,12 +601,16 @@ span.yb-gradient{
     left: 0;
     width: 100%;
     height: 100%;
+    transform: scale(1.02);
+    box-shadow: inset 0 30px 40px 0 rgb(216, 22, 64), inset 0 10px 20px 0 rgba(0, 0, 0, .7);    
+    border-radius: 100%;
 }
 
 .wheel-section span {
 	display: inline-block;
 	position: relative;
-	padding: 0.5rem;
+    overflow: hidden;   
+    border-radius: 100%;
 }
 
 .wheel-section span:before {
@@ -643,7 +653,7 @@ span.yb-gradient{
 .text {
 	font-family: "Inter", sans-serif;
 	position: absolute;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 	left: -100%;
 	width: 200%;
 	height: 200%;
@@ -652,6 +662,8 @@ span.yb-gradient{
 	padding-top: 3.7rem;
 	font-weight: 600;
 	color: #fff;
+    z-index: 10;
+    
 }
 
 .text > b {
@@ -715,6 +727,12 @@ span.yb-gradient{
 
   /* Medium devices (tablets, under 767px ) */
 @media (max-width: 767px) { 
+  
+
+    .casino-header{
+        background-position: bottom center;
+    }
+
     .container-narrow {
         padding: 3rem 1.1rem;
     }   
@@ -723,8 +741,27 @@ span.yb-gradient{
         text-align: center;
     }
     .video-bg .button{
-        text-wrap: wrap;
         width: 90%;
+        font-size: 1.07rem;
+    }
+
+    .casino-banner{
+        background: url('../images/div.relative.png') bottom center no-repeat;
+    }
+    
+    .btn350 {
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+  
+    
+
+    .casino-marquee{
+        background:  rgba(34, 44, 41, 0.7);    
+    }
+
+    .boxes{       
+        gap: 60px;
     }
 
     .box:nth-child(1):after,
@@ -740,6 +777,15 @@ span.yb-gradient{
         background: url('../images/betting-header-bg-m.png') top left no-repeat;
         background-size: cover;
         text-align: center;
+    }
+
+    .betting-banner{
+        padding-bottom: 0;
+    }
+
+    .betting-banner .d-md-none{
+        position: relative;
+        margin-top: -20px;
     }
 
     .wheel-bg h1{
@@ -766,8 +812,9 @@ span.yb-gradient{
 
     .text {       
         font-size: 1.2rem;
-        padding-top: 3.5rem;
+        padding: 3.5rem 0 0;
         font-weight: 600;
+
     }
 
     .btn--go{
@@ -801,6 +848,30 @@ span.yb-gradient{
     .wheel {
         width: var(--size-wheel-mob);
         height: var(--size-wheel-mob);
+    }
+
+    .banner .winning-thrill{
+        padding: .2rem .7rem;
+    }  
+
+   
+    
+    .glown-bg img{
+        width: 90%;
+        margin: auto;
+    }
+    .advantage .button{
+        display: block;
+        width: 100%;
+    }
+    .button span {
+        padding: 10px 26px;
+    }
+
+    .icon-buttons .btn {
+        margin: .2rem 0.1rem;
+        font-size: 1rem;
+        display: inline-block;
     }
 
     .msg {	
@@ -842,9 +913,16 @@ span.yb-gradient{
     
 }
 
-
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    h1{
+        font-size: 3.15rem;
+    }
+    
+    h2{
+        font-size: 2.8rem;
+    }
+
     .order-md-1{
         order: 1;
     }    
@@ -854,24 +932,33 @@ span.yb-gradient{
     .order-md-3{
         order: 3;
     }
-    .btn350{
-        min-width: 350px;    
+   .button{
+    border: double 2px transparent;
+   }
+    .hide-m{
+        display: none;
     }
 
     .banner p{
         width: 90%;
     } 
+
     .boxes{
         grid-template-columns: repeat(3, 1fr);
+        
     } 
 
     .box:nth-child(1):after,
     .box:nth-child(2):after{
-        right: -60px;
+        right: -20px;
         top: 50%;
-        width: 60px;
+        width: 20px;
         height: 2px;
         border-bottom: 1px dashed #999;
+    }
+
+    .box p{
+        margin: 6% auto ;
     }
 
     .text-lg{
@@ -880,6 +967,8 @@ span.yb-gradient{
         width: 80%;
         margin: 1rem auto;
     }
+
+    
 
     .boxes p{
         font-size: 1.2rem;        
@@ -924,7 +1013,18 @@ span.yb-gradient{
 @media (min-width: 992px) { 
     .banner-half{
         width: 50%;        
-    }   
+    } 
+
+    .boxes{       
+        gap: 60px;
+    }
+    
+    .box:nth-child(1):after,
+    .box:nth-child(2):after{
+        right: -60px;
+        top: 50%;
+        width: 60px;
+    }
 
 }
 
